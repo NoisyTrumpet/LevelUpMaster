@@ -13,7 +13,6 @@ import Footer from "./footer"
 import "../styles/default.css"
 import "animate.css/animate.min.css"
 
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -27,9 +26,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div
-          
-        >
+        <div>
           <main>{children}</main>
         </div>
         <Footer siteTitle={data.site.siteMetadata.title} />

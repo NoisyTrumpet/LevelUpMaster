@@ -58,7 +58,7 @@
 }
 .dwnPad{
 	position: absolute;
-	bottom: 18%;
+	bottom: 66%;
 	left: 48%;
 	z-index: 4;
 }
@@ -84,7 +84,7 @@
 		margin: 5rem 4rem; 
 	}
 	.gradient{
-		position: absolute;
+		position: static;
 		bottom: 4%;
 		left: 0%;
 		height: 450px;
@@ -93,12 +93,11 @@
     	linear-gradient(
       		rgba(255,255,255,0), rgba(255,255,255,1)
     	);
-    	z-index: -4;
+    	z-index: 2;
 	}
 	.dwnPad{
 		position: absolute;
-		bottom: 18%;
-		left: 47%;
+		bottom: 12%;
 	}
 }
 
@@ -120,7 +119,7 @@
     	linear-gradient(
       		rgba(255,255,255,0), rgba(255,255,255,1)
     	);
-    	z-index: -4;
+    	z-index: 2;
 	}
 	.dwnPad{
 		position: absolute;
@@ -146,7 +145,7 @@
 		padding: 0 1rem;
 	}
 	.heroTitle {
-		font-size: 30px;
+		font-size: 1.6rem;
 		text-align: left;
 	}
 	.heroTitleBig {
@@ -173,7 +172,7 @@
     	linear-gradient(
       		rgba(255,255,255,0), rgba(255,255,255,1)
     	);
-    	z-index: -4;
+    	z-index: 2;
 	}
 	.dwnPad{
 		position: absolute;
@@ -204,6 +203,8 @@
 	}
 	.heroTitle {
 		font-size: 26px;
+		text-align: left;
+		font-size: 1.2rem;
 	}
 	.heroTitleBig {
 		font-size: 42px;
@@ -214,11 +215,12 @@
 		margin-left: -.7rem;
 	}
 	.heroDes {
-		text-align: left;
+		text-align: left !important;
 		max-width: 320px;
 		font-size: 18px;
 		margin-left: -.1rem;
 	}
+
 	.gradient{
 		position: absolute;
 		bottom: -9%;
@@ -229,15 +231,17 @@
     	linear-gradient(
       		rgba(255,255,255,0), rgba(255,255,255,1)
     	);
-    	z-index: -4;
+    	z-index: 2;
 	}
 	.dwnPad{
 		position: absolute;
 		bottom: 23%;
 		left: 41%;
+		width: 50px;
+		height: 50px;
 	}
 	.padImg{
-		width: 80px;
-		height: 80px;
+		width: 50px !important;
+		height: 50px !important;
 	}
 }

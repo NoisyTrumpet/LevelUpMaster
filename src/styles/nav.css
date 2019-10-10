@@ -1,0 +1,16 @@
+.toolbar.scrolled {
+	/* background-color: #ffffff; */
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 47%, rgba(255,255,255,0.9) 63%, rgba(255,255,255,0.88) 66%, rgba(255,255,255,0.88) 72%, rgba(255,255,255,0.88) 72%, rgba(255,255,255,0.88) 73%);
+	background: -webkit-gradient(left top, right top, color-stop(47%, rgba(255,255,255,1)), color-stop(63%, rgba(255,255,255,0.9)), color-stop(66%, rgba(255,255,255,0.88)), color-stop(72%, rgba(255,255,255,0.88)), color-stop(72%, rgba(255,255,255,0.88)), color-stop(73%, rgba(255,255,255,0.88)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 47%, rgba(255,255,255,0.9) 63%, rgba(255,255,255,0.88) 66%, rgba(255,255,255,0.88) 72%, rgba(255,255,255,0.88) 72%, rgba(255,255,255,0.88) 73%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 47%, rgba(255,255,255,0.9) 63%, rgba(255,255,255,0.88) 66%, rgba(255,255,255,0.88) 72%, rgba(255,255,255,0.88) 72%, rgba(255,255,255,0.88) 73%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,1) 47%, rgba(255,255,255,0.9) 63%, rgba(255,255,255,0.88) 66%, rgba(255,255,255,0.88) 72%, rgba(255,255,255,0.88) 72%, rgba(255,255,255,0.88) 73%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 47%, rgba(255,255,255,0.9) 63%, rgba(255,255,255,0.88) 66%, rgba(255,255,255,0.88) 72%, rgba(255,255,255,0.88) 72%, rgba(255,255,255,0.88) 73%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+	transition: 200ms ease;
+}
+
+.headroom--scrolled {
+	background: rgb(255, 255, 255);
+}
