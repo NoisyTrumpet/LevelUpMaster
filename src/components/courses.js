@@ -10,8 +10,9 @@ import HandIcon from "../images/handIcon.png"
 
 import courseStyles from "../styles/courses.module.scss"
 
-const Courses = () => (
-  <div id="courses" className={courseStyles.courseMain}>
+const Courses = () => {
+  return (
+    <div id="courses" className={courseStyles.courseMain}>
     <h1
       className={courseStyles.coursesSect}
       style={{ color: COLORS.levelUpPurple }}
@@ -48,17 +49,17 @@ const Courses = () => (
           <div className={courseStyles.courses}>
             <div className={courseStyles.courseItem}>
               <img src={BlkComp} alt="" />
-              <p>Mission</p>
+              <p className={courseStyles.courseTextP}>Mission</p>
             </div>
             <img src={BodyLine} alt="" className={courseStyles.coursesDivide} />
             <div className={courseStyles.courseItem}>
               <img src={CirComp} alt="" />
-              <p>Focus</p>
+              <p className={courseStyles.courseTextP}>Focus</p>
             </div>
             <div className={courseStyles.courseSpacer} />
             <div className={courseStyles.courseItem}>
               <img src={HandIcon} alt="" />
-              <p>
+              <p className={courseStyles.courseTextP}>
                 Real Time
                 <br />
                 Strategy
@@ -107,6 +108,7 @@ const Courses = () => (
       </div>
     </div>
   </div>
-)
+  )
+}
 
 export default Courses
