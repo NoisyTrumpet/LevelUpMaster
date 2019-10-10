@@ -230,12 +230,12 @@
 
 @media (max-width: 375px){
 .socialIcon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 .footSocial {
-    grid-template-columns: repeat(auto-fit, minmax(50px, 80px));
-    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 40px));
+    grid-gap: 2rem;
 }
 .footerLinks {
     margin: 1rem auto 0 auto;
@@ -263,4 +263,9 @@
 .footerLinks {
     padding-left: 0;
 }
+
+.footerLinks1, .footerLinks2 {
+    width: 50%;
+}
+
 }

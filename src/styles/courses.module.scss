@@ -18,6 +18,10 @@
 	left: 4%;
 }
 
+.courseTextP {
+	font-family: 'azo-sans-web';
+}
+
 .skewCardCourse {
 	/*transform: skewX(0rad);*/
 	transform: skewX(-.15rad);
@@ -103,7 +107,7 @@
 .courseItem p{
 	margin: auto;
 	width: 150px;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 }
 
 .courseSpacer {
@@ -245,8 +249,14 @@
 .coursesSect {
 	left: 2%;
 	top: 0;
-	margin: 8rem auto 5rem auto;
+	margin: 1rem auto;
+	font-size: 2rem;
 }
+
+.coursesSect span {
+	font-size: 1rem !important;
+}
+
 .cardSectCourse {
 	display: none;
 }
@@ -312,13 +322,14 @@
 	position: relative;
 	max-width: 430px;
 	left: 10px;
-	margin: 3rem auto 3rem auto;
-	font-size: 1.2rem;
+	margin: 2rem auto;
+	font-size: 1rem;
 	font-weight: 300;
 	padding: 0;
+	width: 80%;
 }
 .courseItem img {
-	max-height: 80px;
+	max-height: 50px;
 }
 .coursesDivide {
 	max-width: 300px;

@@ -1,5 +1,5 @@
 .aboutMain {
-	padding: 4rem 0 5.5rem 0;
+	padding: 4rem 0 1rem 0;
 	margin: auto;
 	position: relative;
 	right: 5%;
@@ -242,6 +242,7 @@
 	}
 }
 
+
 @media (max-width: 1023px){
 	.aboutMain {
 	right: 0;
@@ -269,7 +270,7 @@
 .mobCont {
 	background-color: #fff;
 	width: 80%;
-	height: 80%;
+	height: 70%;
 	margin: auto;
 	transform: skewX(-.10rad);
 	vertical-align: middle;
@@ -293,8 +294,8 @@
 	transform: skewX(.10rad);
 	font-family: "azo-sans-web";
 	position: relative;
-	max-width: 430px;
-	left: 10px;
+	max-width: 425px;
+	left: 5px;
 	margin: -15px auto auto auto;
 	font-size: 1rem;
 	font-weight: 400;
@@ -317,15 +318,6 @@
 }
 }
 
-@media (min-width: 751px) and (max-width: 1022px) {
-	.bottomSect {
-		margin: 2rem 0rem 2rem 0rem;
-	}
-
-	.aboutMain {
-		padding: 1rem;
-	}
-}
 
 @media (min-width: 376px) and (max-width: 750px){
 .aboutSect {
@@ -338,8 +330,8 @@
 
 @media (max-width: 375px){
 .aboutSect {
-	font-size: 4rem;
-	margin: 8rem auto 6rem auto;
+	font-size: 3rem;
+	margin: 1rem auto 2rem auto;
 }
 
 .aboutMain {
@@ -347,7 +339,7 @@
 }
 .mobCont {
 	width: 90%;
-	height: 95%;
+	height: 75%;
 	transform: skewX(-.05rad);
 }
 .cardSubTitle{
@@ -383,4 +375,11 @@
 	width: 100%;
 	max-width: 280px;
 }
+}
+
+
+@media (max-width: 375px) {
+	.mobCount {
+		height: 70% !important;
+	}
 }
