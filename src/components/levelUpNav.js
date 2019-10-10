@@ -1,5 +1,4 @@
 import React from 'react'
-import $ from "jquery"
 // import { Link } from 'gatsby'
 
 import navStyles from '../styles/nav.module.scss'
@@ -9,31 +8,11 @@ import Logo from "../images/LevelUp-Logo.png"
 
 
 
+
+
+
 const NavBarLevel = () => {
     return (
-
-    	 $(document).ready(function () {
-    var scrollTop = 0;
-    $(window).scroll(function () {
-      scrollTop = $(window).scrollTop();
-      $('.counter').html(scrollTop);
-
-      if (scrollTop >= 100) {
-        $('.toolbar').addClass('scrolled');
-      } else if (scrollTop < 100) {
-        $('.toolbar').removeClass('scrolled');
-      }
-    });
-  }),
-
-  $(document).ready(function () {
-    $('a[rel="relativeanchor"]').click(function () {
-      $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-      }, 500);
-      return false;
-    });
-  }),
 
     		<Navbar className={navStyles.toolbar} sticky="top" expand="lg" >
     		<div id="MobileMenu" className={navStyles.mNav} tabIndex="0">
