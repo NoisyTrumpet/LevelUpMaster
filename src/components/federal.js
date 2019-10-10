@@ -15,14 +15,16 @@ const Federal = () => {
 
             <p>
               Want to collaborate with <strong>LevelUP</strong> or the USAF?
-              <br />
+              
               Check out our federal bussiness opportunities.
             </p>
 
             <div className={fedStyles.fedButton}>
-              <button>
+              <a href="https://www.fbo.gov/">
+                <button>
                 <h4>LevelUP</h4>
               </button>
+              </a>
             </div>
           </div>
         </div>

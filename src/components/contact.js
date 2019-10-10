@@ -14,10 +14,12 @@ const Contact = () => {
 				>
 					<h3>Get in Touch</h3>
 					<ul>
+						<a href="mailto:AFLCMC.HNCP.LevelUP@us.af.mil">
 						<li>
 							<img src={Email} alt="" className={contactStyles.emailIcon} />
 							AFLCMC.HNCP.LevelUP@us.af.mil
 						</li>
+						</a>
 					</ul>
 				</div>
 			</div>

@@ -58,7 +58,7 @@
 }
 .dwnPad{
 	position: absolute;
-	bottom: 66%;
+	top: 75%;
 	left: 48%;
 	z-index: 5;
 }
@@ -177,8 +177,8 @@
 	}
 	.dwnPad{
 		position: absolute;
-		bottom: 28%;
-		left: 42%;
+		bottom: 66% !important;
+		left: 47%;
 	}
 	.padImg{
 		width: 50px;

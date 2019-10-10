@@ -13,7 +13,7 @@ import courseStyles from "../styles/courses.module.scss"
 const Courses = () => {
   return (
     <div id="courses" className={courseStyles.courseMain}>
-    <h1
+    <h2
       className={courseStyles.coursesSect}
       style={{ color: COLORS.levelUpPurple }}
     >
@@ -23,7 +23,7 @@ const Courses = () => {
         for the
       </span>{" "}
       win
-    </h1>
+    </h2>
 
     <div className={courseStyles.cardSectCourse}>
       <content

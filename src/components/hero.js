@@ -56,9 +56,6 @@ const Header = ({ siteTitle }) => {
           <strong>LevelUP Code Works</strong> is a U.S. Air Force software
           development outfit in San Antonio, Texas.
         </h1>
-      </div>
-
-      <div className={heroStyles.gradient}>
         <a rel="relativeanchor" href="#about">
           <div className={heroStyles.dwnPad}>
             <span
@@ -66,6 +63,10 @@ const Header = ({ siteTitle }) => {
             ></span>
           </div>
         </a>
+      </div>
+      
+      <div className={heroStyles.gradient}>
+        
       </div>
     </div>
   )
