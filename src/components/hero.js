@@ -1,56 +1,61 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { COLORS } from "../styles/constants"
+import heroImage from "../images/heroBack.png"
+import HeroLine from "../images/heroLine.png"
+import ScrollAnimation from "react-animate-on-scroll"
 
-import Button from "../components/button"
-import headerImage from "../images/header.png"
-import MockupContent from "./image"
-import mockupFrame from "../images/mockup-frame.png"
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      display: "flex",
-      alignItems: "center",
-      flexDirection: "column",
-      padding: "4rem 1rem",
-    }}
-  >
-    <div
-      style={{
-        backgroundImage: `url(${headerImage})`,
+
+// import Jumbotron from 'react-bootstrap/Jumbotron'
+
+import heroStyles from '../styles/hero.module.scss'
+
+if (typeof window !== 'undefined') {
+  // Make scroll behavior of internal links smooth
+  require('smooth-scroll')('a[href*="#"]');
+}
+
+const Header = ({ siteTitle }) => {
+  return (
+
+	<div className={heroStyles.heroMain}>
+    <div className={heroStyles.heroBanner} style={{
+        backgroundImage: `url(${heroImage})`,
         position: "absolute",
+        backgroundSize: "cover",
         top: 0,
+        right: 0,
         zIndex: -5,
-        height: "100vh",
-        width: "100vw",
-        opacity: 0.5,
-      }}
-    />
-    <h1 style={{ textAlign: "center" }}>Landing Page Starter</h1>
-    <p style={{ textAlign: "center", maxWidth: 440 }}>
-      This landing page looks great on all devices and is minimal in design. Add
-      what you want and deploy.
-    </p>
-    <Button>Get Early Access</Button>
-    <div style={{ margin: 60, width: `250px`, position: "relative" }}>
-      <div style={{ clipPath: "inset(2% 5% round 2% 5%)" }}>
-        <MockupContent />
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          width: "250px",
-          top: 0,
-        }}
-      >
-        <img
-          src={mockupFrame}
-          alt="outlines of shapes and confetti in the background "
-        />
-      </div>
+        maxHeight: 1020,
+        maxWidth: 1424,
+        width: `100%`,
+        height: `100%`,
+        opacity: 1,
+    }}/>
+    <div className={heroStyles.heroCont}>
+        <ScrollAnimation animateIn="fadeIn">
+          <h2 className={heroStyles.heroTitle} style={{color: COLORS.levelUpBlue}}>
+          Be bold<br/><span className={heroStyles.heroTitleBig} style={{color: COLORS.levelUpPurple}}>Act Now</span><br/>Learn <span className={heroStyles.heroTitleSmall}>and</span> Adapt</h2>
+        </ScrollAnimation>
+        <img src={HeroLine} className={heroStyles.heroDivide} alt="" />
+        <h1 className={heroStyles.heroDes} style={{color: COLORS.darkGray}}>
+          <strong>LevelUP Code Works</strong> is a U.S. Air Force software development outfit in San Antonio, Texas.
+        </h1>
+
     </div>
+
+    <div className={heroStyles.gradient}>
+      <a rel="relativeanchor" href="#about">
+        <div className={heroStyles.dwnPad}>
+      <span className={`${heroStyles.padImg} ${heroStyles.padDwn}`}></span>
+        </div>
+      </a>
+    </div>
+
   </div>
-)
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

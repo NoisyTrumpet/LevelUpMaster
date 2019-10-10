@@ -1,0 +1,243 @@
+.heroMain{
+	display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 4rem 1rem;
+}
+
+.heroDivide {
+	display: block;
+	width: 100%;
+	max-width: 600px;
+	margin: auto;
+	padding: 0 0 .5rem 0;
+}
+
+.heroCont {
+	justify-content: center;
+	margin: 8rem 8rem;
+	width: 600px;
+}
+
+.heroTitle {
+	text-align: center;
+	font-family: "Ready Player One";
+	font-size: 42px;
+	margin-bottom: 0;
+	font-weight: 100;
+}
+
+.heroTitleBig {
+	font-size: 86px;
+	font-weight: 600;
+}
+
+.heroTitleSmall {
+	font-size: 28px;
+}
+
+.heroDes {
+	text-align: center;
+	max-width: 525;
+	margin: auto;
+	font-family: "azo-sans-web";
+	font-size: 22px;
+}
+
+.gradient{
+	position: absolute;
+	bottom: 4%;
+	left: 0%;
+	height: 450px;
+	width: 100%;
+	background-image:
+    linear-gradient(
+      	rgba(255,255,255,0), rgba(255,255,255,1)
+    );
+    z-index: 2;
+}
+.dwnPad{
+	position: absolute;
+	bottom: 18%;
+	left: 48%;
+	z-index: 4;
+}
+
+.padImg{
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+	display: block;
+	margin: 0 auto;
+}
+.padDwn{
+	background-image: url("../images/padDown.svg");
+
+}
+.padDwn:hover, .padDwn:focus{
+	background-image: url("../images/padDownHover.svg");
+}
+
+
+@media (min-width: 901px) and (max-width: 1200px){
+	.heroCont {
+		margin: 5rem 4rem; 
+	}
+	.gradient{
+		position: absolute;
+		bottom: 4%;
+		left: 0%;
+		height: 450px;
+		width: 100%;
+		background-image:
+    	linear-gradient(
+      		rgba(255,255,255,0), rgba(255,255,255,1)
+    	);
+    	z-index: -4;
+	}
+	.dwnPad{
+		position: absolute;
+		bottom: 18%;
+		left: 47%;
+	}
+}
+
+@media (min-width: 751px) and (max-width: 900px){
+	.heroBanner {
+		background-position: top;
+		margin-top: 80px;
+	}
+	.heroCont {
+		margin: 8rem 3rem; 
+	}
+	.gradient{
+		position: absolute;
+		bottom: -3%;
+		left: 0%;
+		height: 450px;
+		width: 100%;
+		background-image:
+    	linear-gradient(
+      		rgba(255,255,255,0), rgba(255,255,255,1)
+    	);
+    	z-index: -4;
+	}
+	.dwnPad{
+		position: absolute;
+		bottom: 30%;
+		left: 46%;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 750px){
+	.heroMain{
+		display: block;
+    	padding: 4rem 0;
+    	margin: 0;
+	}
+	.heroBanner {
+		background-position: top;
+		margin-top: 80px;
+	}
+	.heroCont {
+		justify-content: flex-start;
+		margin: 9rem auto 2rem auto;
+		width: 100%;
+		padding: 0 1rem;
+	}
+	.heroTitle {
+		font-size: 30px;
+		text-align: left;
+	}
+	.heroTitleBig {
+		font-size: 46px;
+	}
+	.heroDivide {
+		transform: scaleX(-1);
+		max-width: 320px;
+		margin-left: -.7rem;
+	}
+	.heroDes {
+		text-align: left;
+		max-width: 320px;
+		font-size: 18px;
+		margin-left: -.1rem;
+	}
+	.gradient{
+		position: absolute;
+		bottom: -9%;
+		left: 0%;
+		height: 300px;
+		width: 100%;
+		background-image:
+    	linear-gradient(
+      		rgba(255,255,255,0), rgba(255,255,255,1)
+    	);
+    	z-index: -4;
+	}
+	.dwnPad{
+		position: absolute;
+		bottom: 28%;
+		left: 42%;
+	}
+	.padImg{
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@media (max-width: 374px){
+	.heroMain{
+		display: block;
+    	padding: 4rem 0;
+    	margin: 0;
+	}
+	.heroBanner {
+		background-position: top;
+		margin-top: 80px;
+	}
+	.heroCont {
+		justify-content: flex-start;
+		margin: 8rem auto 2rem auto;
+		width: 100%;
+		padding: 0 1rem;
+	}
+	.heroTitle {
+		font-size: 26px;
+	}
+	.heroTitleBig {
+		font-size: 42px;
+	}
+	.heroDivide {
+		transform: scaleX(-1);
+		max-width: 320px;
+		margin-left: -.7rem;
+	}
+	.heroDes {
+		text-align: left;
+		max-width: 320px;
+		font-size: 18px;
+		margin-left: -.1rem;
+	}
+	.gradient{
+		position: absolute;
+		bottom: -9%;
+		left: 0%;
+		height: 200px;
+		width: 100%;
+		background-image:
+    	linear-gradient(
+      		rgba(255,255,255,0), rgba(255,255,255,1)
+    	);
+    	z-index: -4;
+	}
+	.dwnPad{
+		position: absolute;
+		bottom: 23%;
+		left: 41%;
+	}
+	.padImg{
+		width: 80px;
+		height: 80px;
+	}
+}

@@ -5,21 +5,31 @@
   "version": "0.1.0",
   "author": "Kyle Gill <kyle.robert.gill@gmail.com>",
   "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.3.1",
     "gatsby": "^2.1.37",
     "gatsby-image": "^2.0.34",
     "gatsby-plugin-google-analytics": "^2.0.17",
     "gatsby-plugin-react-helmet": "^3.0.10",
+    "gatsby-plugin-sass": "^2.1.18",
     "gatsby-plugin-sharp": "^2.0.29",
     "gatsby-plugin-sitemap": "^2.0.10",
     "gatsby-source-filesystem": "^2.0.27",
     "gatsby-transformer-sharp": "^2.1.17",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
-    "sharp": "^0.22.0"
+    "react-scroll": "^1.7.14",
+    "sharp": "^0.22.0",
+    "smooth-scroll": "^16.1.0"
   },
   "devDependencies": {
+    "eslint-plugin-react": "^7.16.0",
     "prettier": "^1.16.4"
   },
   "keywords": [

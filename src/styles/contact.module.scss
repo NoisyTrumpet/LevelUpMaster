@@ -1,0 +1,90 @@
+.contact {
+	display: inline-block;
+	margin: 8rem auto 8rem auto;
+	text-align: center;
+}
+
+.contactMain {
+	display: grid;
+    align-items: top;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(15%, 30%));
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.contactCont {
+	display: block;
+	font-size: 1.1rem;
+}
+
+.contactCont h3 {
+	color: #2C65AC;
+	text-shadow: 1px 2px 2px #B0B8BA;
+	font-size: 2rem;
+	font-family: "azo-sans-web";
+}
+
+.contactInfo ul{
+	list-style: none;
+	text-align: center;
+	position: relative;
+	left: -3%;
+}
+
+.contactLine {
+	width: 35%;
+	margin: auto;
+}
+
+.emailIcon{
+	width: 48px;
+	margin-right: 2.5rem;
+	vertical-align: middle;
+}
+
+
+
+@media (min-width: 1113px) and (max-width: 1366px){
+.contactLine {
+	width: 40%;
+}
+}
+
+@media (min-width: 901px) and (max-width: 1112px){
+.contactLine {
+	width: 50%;
+}
+}
+
+@media (min-width: 751px) and (max-width: 900px){
+.contactLine {
+	width: 60%;
+}
+}
+
+@media (min-width: 376px) and (max-width: 750px){
+.contactLine {
+	width: 80%;
+}
+.emailIcon{
+	width: 38px;
+	margin-right: 1.5rem;
+}
+.contactCont {
+	font-size: 1.1rem;
+}
+}
+
+@media (max-width: 375px){
+.contactLine {
+	width: 80%;
+}
+.emailIcon{
+	width: 38px;
+	margin-right: .5rem;
+}
+.contactCont {
+	font-size: 1.05rem;
+}
+}

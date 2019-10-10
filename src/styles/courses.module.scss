@@ -1,0 +1,363 @@
+.courseMain {
+	padding: 0 0 5.5rem 0;
+	margin: auto;
+	position: relative;
+	right: 5%;
+}
+
+.coursesSect {
+	font-size: 4.5rem;
+	font-family: "Ready Player One";
+	font-weight: 500;
+	word-spacing: 10px;
+	z-index: 10;
+	margin-top: 8rem;
+	margin-bottom: .5rem;
+	text-align: center;
+	position: relative;
+	left: 4%;
+}
+
+.skewCardCourse {
+	/*transform: skewX(0rad);*/
+	transform: skewX(-.15rad);
+	background: #fff;
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+	width: 550px;
+	height: 650px;
+	// margin: auto;
+	z-index: 5;
+	position: relative;
+	right: 50px;
+
+	background-image: url("../images/levelUP3.jpg");
+	background-position: 0 -25px;
+	background-repeat: no-repeat;
+	background-size: 560px;
+}
+
+.skewCardBackCourse {
+	/*transform: skewX(0rad);*/
+	transform: skewX(-.15rad);
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+	width: 550px;
+	height: 650px;
+	margin: auto;
+	z-index: 1;
+	position: relative;
+	top: 30px;
+	left: 50px;
+	text-align: center;
+}
+
+.cardContCourse {
+	display: block;
+	font-family: "azo-sans-web";
+	transform: skewX(.15rad);
+	margin: 21rem auto 0 auto;
+	padding: 1rem;
+	max-width: 500px;
+	font-size: 1.8rem;
+	text-align: left;
+	line-height: 1.3;
+	color: #5c6061;
+}
+
+
+.cardContCourse p{
+	left: -15px;
+	margin: auto;
+}
+
+.courses {
+	max-width: 500px;
+	margin: auto;
+	padding: 2.5rem 0;
+}
+
+.courseItem {
+	transform: skewX(.15rad);
+	display: inline-flex;
+	text-align: left;
+	align-items: center;
+    justify-content: space-between;
+    color: #5c6061;
+    margin-bottom: 2rem;
+}
+
+.coursesDivide {
+	transform: skewX(.15rad);
+	max-width: 330px;
+	width: 100%;
+	height: auto;
+	margin: -2.5rem auto 3rem 1rem;
+}
+
+.courseItem img {
+	max-height: 100px;
+	width: auto;
+	height: 100%;
+	margin: auto 2rem;
+}
+
+.courseItem p{
+	margin: auto;
+	width: 150px;
+	font-size: 1.8rem;
+}
+
+.courseSpacer {
+	content: "";
+	margin: auto;
+	padding: 1.5rem;
+}
+
+
+
+/*.sideLineCourse {
+	height: 100%;
+	max-height: 200px;
+	opacity: 0;
+	position: relative;
+	top: -120px;
+	right: -250px;
+}*/
+
+
+
+@media (min-width: 1112px) and (max-width: 1245px){
+.courseMain {
+	padding: 0 0 5.5rem 0;
+	right: 6%;
+}
+.coursesSect {
+	margin-top: 8rem auto .5rem auto;
+	text-align: center;
+}
+.cardSectCourse{
+	position: relative;
+	left: -1%;
+	overflow: visible;
+}
+.skewCardCourse {
+	transform: skewX(-.10rad);
+	width: 500px;
+	height: 650px;
+	right: 70px;
+
+	background-image: url("../images/levelUP3.jpg");
+	background-position: 0 -25px;
+	background-size: 500px;
+}
+.skewCardBackCourse {
+	transform: skewX(-.10rad);
+	width: 500px;
+	height: 650px;
+	top: 30px;
+	left: 10px;
+}
+.courses {
+	padding: 4.5rem 0 2.5rem 0;
+}
+.cardContCourse {
+	transform: skewX(.10rad);
+	margin: 19rem auto 0 auto;
+}
+.courseItem {
+	transform: skewX(.10rad);
+}
+.coursesDivide {
+	transform: skewX(.10rad);
+	max-width: 330px;
+	width: 100%;
+	height: auto;
+	margin: -2.5rem auto 3rem 1rem;
+}
+.courseItem img {
+	max-height: 90px;
+	width: auto;
+}
+.courseSpacer {
+	padding: 1.5rem;
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1111px){
+.courseMain {
+	padding: 0 0 5.5rem 0;
+	right: 6%;
+}
+.coursesSect {
+	margin-top: 8rem auto .5rem auto;
+	text-align: center;
+}
+.skewCardCourse {
+	transform: skewX(-.10rad);
+	width: 450px;
+	height: 600px;
+	right: 40px;
+
+	background-image: url("../images/levelUP3.jpg");
+	background-position: 0 -25px;
+	background-size: 450px;
+}
+.skewCardBackCourse {
+	transform: skewX(-.10rad);
+	width: 450px;
+	height: 600px;
+	top: 30px;
+	left: 8px;
+}
+.courses {
+	padding: 3.5rem 0 2.5rem 0;
+}
+.cardContCourse {
+	transform: skewX(.10rad);
+	margin: 17rem auto 0 auto;
+}
+.courseItem {
+	transform: skewX(.10rad);
+}
+.coursesDivide {
+	transform: skewX(.10rad);
+	max-width: 320px;
+	width: 100%;
+	height: auto;
+	margin: -2.5rem auto 3rem 1rem;
+}
+.courseItem img {
+	max-height: 80px;
+	width: auto;
+}
+.courseSpacer {
+	padding: 1.5rem;
+}
+}
+
+@media (min-width: 1024px){
+	.mobBackCourses {
+		display:none;
+	}
+}
+
+@media (max-width: 1023px){
+
+.coursesSect {
+	left: 2%;
+	top: 0;
+	margin: 8rem auto 5rem auto;
+}
+.cardSectCourse {
+	display: none;
+}
+
+.mobBackCourses {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5%;
+}
+.mobContCourses {
+	background-color: #fff;
+	width: 70%;
+	margin: auto auto 1rem auto;
+	transform: skewX(-.10rad);
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+}
+.mobContCourses img {
+	margin: 0;
+}
+.mobContCourses p{
+	transform: skewX(.10rad);
+	font-family: "azo-sans-web";
+	position: relative;
+	max-width: 430px;
+	left: 10px;
+	margin: 3rem auto 3rem auto;
+	font-size: 1.5rem;
+	font-weight: 300;
+	padding: 0;
+}
+.mobSectCourses{
+	margin: 1rem auto;
+}
+.mobSectCourses ul{
+	list-style-type: none;
+}
+.courseItem {
+	transform: skewX(0rad);
+}
+.coursesDivide {
+	transform: skewX(0rad);
+	max-width: 330px;
+	width: 100%;
+	height: auto;
+	margin: -1.5rem auto 2rem 1rem;
+}
+.courseSpacer {
+	padding: 1rem;
+}
+}
+
+@media (min-width: 376px) and (max-width: 750px){
+.mobContCourses {
+	background-color: #fff;
+	width: 83%;
+	margin: auto auto 1rem auto;
+	transform: skewX(-.10rad);
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+}
+.mobContCourses p{
+	transform: skewX(.10rad);
+	font-family: "azo-sans-web";
+	position: relative;
+	max-width: 430px;
+	left: 10px;
+	margin: 3rem auto 3rem auto;
+	font-size: 1.2rem;
+	font-weight: 300;
+	padding: 0;
+}
+.courseItem img {
+	max-height: 80px;
+}
+.coursesDivide {
+	max-width: 300px;
+	margin: -1.5rem auto 2rem auto;
+}
+}
+
+@media (max-width: 375px){
+	.mobContCourses {
+	background-color: #fff;
+	width: 83%;
+	margin: auto auto 1rem auto;
+	transform: skewX(-.05rad);
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+}
+.mobContCourses p{
+	transform: skewX(.05rad);
+	font-family: "azo-sans-web";
+	position: relative;
+	max-width: 430px;
+	left: 10px;
+	margin: 3rem auto 3rem auto;
+	font-size: 1.2rem;
+	font-weight: 300;
+	padding: 0;
+}
+.mobSectCourses ul{
+	margin: auto;
+}
+.courseItem img {
+	max-height: 55px;
+}
+.courseItem p{
+	margin: auto;
+	width: 150px;
+	font-size: 1.5rem;
+}
+.coursesDivide {
+	max-width: 200px;
+	margin: -1.5rem auto 2rem 1rem;
+}
+}

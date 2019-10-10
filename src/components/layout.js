@@ -11,6 +11,8 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Footer from "./footer"
 import "../styles/default.css"
+import "animate.css/animate.min.css"
+
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -26,9 +28,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <div
-          style={{
-            padding: "0 1rem",
-          }}
+          
         >
           <main>{children}</main>
         </div>
