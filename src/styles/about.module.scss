@@ -317,6 +317,16 @@
 }
 }
 
+@media (min-width: 751px) and (max-width: 1022px) {
+	.bottomSect {
+		margin: 2rem 0rem 2rem 0rem;
+	}
+
+	.aboutMain {
+		padding: 1rem;
+	}
+}
+
 @media (min-width: 376px) and (max-width: 750px){
 .aboutSect {
 	margin: 10rem auto 6rem auto;
@@ -330,6 +340,10 @@
 .aboutSect {
 	font-size: 4rem;
 	margin: 8rem auto 6rem auto;
+}
+
+.aboutMain {
+	padding-bottom: 1px;
 }
 .mobCont {
 	width: 90%;

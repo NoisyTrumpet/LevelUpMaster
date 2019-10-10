@@ -32,7 +32,7 @@ const NavBarLevel = () => {
 			    <Nav className="mr-auto">
 			      <Nav.Link rel="relativeanchor" className={ navStyles.navLink }href="#about">About</Nav.Link>
 			      <Nav.Link rel="relativeanchor" className={ navStyles.navLink }href="#courses">Collaborate</Nav.Link>
-			      <Nav.Link rel="relativeanchor" className={ navStyles.navLink }href="#link">Contact</Nav.Link>
+			      <Nav.Link rel="relativeanchor" className={ navStyles.navLink }href="#contact">Contact</Nav.Link>
 			    </Nav>
 		  	</Navbar.Collapse>
 

@@ -7,7 +7,7 @@ import contactStyles from "../styles/contact.module.scss"
 
 const Contact = () => {
 	return (
-		<div className={contactStyles.contact}>
+		<div className={contactStyles.contact} id="contact">
   <div >
 
     <div className={`${contactStyles.contactInfo} ${contactStyles.contactCont}`}>
