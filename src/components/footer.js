@@ -3,14 +3,17 @@ import PropTypes from "prop-types"
 
 // import { COLORS } from "../styles/constants"
 import Logo from "../images/LevelUp-Logo.png"
+import padUP from "../images/padUp.svg"
 
 import footerStyles from "../styles/footer.module.scss"
 
-const Footer = ({ siteTitle }) => (
-  <footer className={footerStyles.footer}>
-    <div className={footerStyles.directUP}>
-      <span className={footerStyles.padUP}></span>
-    </div>
+const Footer = ({ siteTitle }) => {
+  return (
+    <footer className={footerStyles.footer}>
+
+    <a rel="relativeanchor" href="#hero">
+          <img alt="Directional Pad Up" src={padUP} className={footerStyles.padUP} />
+        </a>
 
     <div className={footerStyles.footMain}>
       <img src={Logo} alt="LevelUP Logo" />
@@ -91,7 +94,8 @@ const Footer = ({ siteTitle }) => (
       </ul>
     </div>
   </footer>
-)
+  )
+}
 
 Footer.propTypes = {
   siteTitle: PropTypes.string,

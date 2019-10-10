@@ -69,9 +69,16 @@
     height: 80px;
     background-size: cover;
 }
+
+
+
 .padUP{
-    background-image: url("/images/padUP.svg");
+    max-width: 50px;
+    display: block;
+    margin: 0 auto 3rem auto;
+    background: url("/images/padUPHover.svg")
 }
+
 .padUP:hover, .padUP:focus{
     background-image: url("/images/padDownHover.svg");
 }

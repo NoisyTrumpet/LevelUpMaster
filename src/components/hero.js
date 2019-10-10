@@ -16,7 +16,7 @@ if (typeof window !== "undefined") {
 
 const Header = ({ siteTitle }) => {
   return (
-    <div className={heroStyles.heroMain}>
+    <div className={heroStyles.heroMain} id="hero">
       <div
         className={heroStyles.heroBanner}
         style={{
