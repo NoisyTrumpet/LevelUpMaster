@@ -15,7 +15,7 @@ const Federal = () => {
 
             <p>
               Want to collaborate with <strong>LevelUP</strong> or the USAF?
-              
+              <br />
               Check out our federal bussiness opportunities.
             </p>
 
