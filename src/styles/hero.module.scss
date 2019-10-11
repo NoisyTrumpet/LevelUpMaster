@@ -78,6 +78,62 @@
 	background-image: url("../images/padDownHover.svg");
 }
 
+//iPhone X landscape view
+
+@media (width: 812px) {
+	.gradient {
+		bottom: 0%;
+		z-index: -1;
+		visibility: hidden;
+	}
+
+	.heroBanner {
+		visibility: hidden;
+	}
+
+	.heroTitle {
+		z-index: 5;
+	}
+
+	.padImg {
+		margin: 407px auto;
+	}
+
+	.heroMain {
+		padding: 0rem 1rem 0rem 2rem;
+		margin: 0 auto;
+	}
+}
+
+//iPhone 6/7/8 Plus landscape view
+
+@media (width: 736px) {
+	.heroBanner {
+		visibility: hidden;
+	}
+
+	.gradient {
+		visibility: hidden;
+	}
+
+	.heroMain {
+		display: block;
+    	padding: 0px !important;
+    	margin: 0;
+	}
+
+	.heroCont {
+		justify-content: flex-start;
+		margin: 10px auto 10px auto;
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.padImg {
+		margin: 160px auto;
+	}
+}
+
 
 @media (min-width: 901px) and (max-width: 1200px){
 	.heroCont {

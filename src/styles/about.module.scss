@@ -138,58 +138,77 @@
 }
 
 
+//iPhone X landscape view
+
+@media (width: 812px) {
+	.aboutSect {
+		padding: 1px 0px 0px 0px;
+		margin: 1px 0px 0px 0px;
+	}
+}
+
+//iPhone 6/7/8 Plus landscape view
+
+@media (width: 736px) {
+	.aboutSect {
+		padding: 1px 0px 0px 0px;
+		margin: 4rem 0px 0px 0px !important;
+	}
+
+	
+}
 
 @media (min-width: 1246px) and (max-width: 1366px){
-.aboutSect {
-	left: 17%;
-	top: 152px;
-}
+	.aboutSect {
+		left: 17%;
+		top: 152px;
+	}
 }
 
 @media (min-width: 1113px) and (max-width: 1245px){
-.aboutSect {
-	left: 22%;
-	top: 151px;
-}
-.cardSect {
-	left: 15%;
-}
-.skewCard {
-	/*transform: skewX(0rad);*/
-	transform: skewX(-.15rad);
-	width: 520px;
-}
-.skewCardBack {
-	/*transform: skewX(0rad);*/
-	transform: skewX(-.15rad);
-	width: 520px;
-	left: -30px;
-	background-size: 205%;
-}
-.cardCont {
-	transform: skewX(.15rad);
-	max-width: 480px;
-	font-size: 1.3rem;
-	text-align: left;
-	color: #5c6061;
-}
-.cardSubTitle{
-	font-size: 2.5rem;
-	margin-top: 5rem;
-}
-.cardSubTitle img {
-	max-width: 380px;
-	margin: 1rem auto;
-}
-.cardCont p{
-	margin-top: .5rem;
-	max-width: 400px;
-	left: -10px;
-	font-size: 1.2rem;
-}
-	.sideLine{
-	display: none;
-}
+	.aboutSect {
+		left: 22%;
+		top: 151px;
+	}
+	.cardSect {
+		left: 15%;
+	}
+	.skewCard {
+		/*transform: skewX(0rad);*/
+		transform: skewX(-.15rad);
+		width: 520px;
+	}
+	.skewCardBack {
+		/*transform: skewX(0rad);*/
+		transform: skewX(-.15rad);
+		width: 520px;
+		left: -30px;
+		background-size: 205%;
+	}
+	.cardCont {
+		transform: skewX(.15rad);
+		max-width: 480px;
+		font-size: 1.3rem;
+		text-align: left;
+		color: #5c6061;
+	}
+	.cardSubTitle{
+		font-size: 2.5rem;
+		margin-top: 5rem;
+	}
+	.cardSubTitle img {
+		max-width: 380px;
+		margin: 1rem auto;
+	}
+	.cardCont p{
+		margin-top: .5rem;
+		max-width: 400px;
+		left: -10px;
+		font-size: 1.2rem;
+	}
+		.sideLine{
+		display: none;
+	}
 }
 
 @media (min-width: 1024px) and (max-width: 1112px){
