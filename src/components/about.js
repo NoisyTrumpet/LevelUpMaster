@@ -5,12 +5,12 @@ import SideLine from "../images/sideLine.png"
 import BodyLine from "../images/bodyLine.png"
 
 import aboutStyles from "../styles/about.module.scss"
+import ScrollAnimation from "react-animate-on-scroll"
 
 const About = () => {
   return (
     <div id="about" className={aboutStyles.aboutMain}>
       <h1 className={aboutStyles.aboutSect}>About</h1>
-
       <div className={aboutStyles.mobBack}>
         <div className={aboutStyles.mobCont}>
           <h2 className={aboutStyles.cardSubTitle}>
@@ -69,7 +69,9 @@ const About = () => {
 
           <div className={aboutStyles.cards}>
             <div className={aboutStyles.sideLine}>
-              <img src={SideLine} alt="" />
+              <ScrollAnimation animateIn="fadeInRight">
+                <img src={SideLine} alt="" />
+              </ScrollAnimation>
             </div>
           </div>
         </div>
@@ -79,6 +81,7 @@ const About = () => {
         className={aboutStyles.bottomSect}
         style={{ color: COLORS.levelUpBlue }}
       >
+
         <h2>
           We're not just here to{" "}
           <span style={{ color: COLORS.levelUpPurple }}>
@@ -88,9 +91,12 @@ const About = () => {
           </span>{" "}
           We're here to
           <br />
+          <ScrollAnimation
+      animateIn="bounce">
           <span className={aboutStyles.botChan1}>Win it</span>
+          </ScrollAnimation>
         </h2>
-
+        
         <img src={BodyLine} alt="" className={aboutStyles.bottomLine} />
       </div>
     </div>

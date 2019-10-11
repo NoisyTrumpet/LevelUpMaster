@@ -5,7 +5,7 @@ import BodyLine from "../images/bodyLine.png"
 import MissionImg from "../images/levelUP3.jpg"
 import FocusImg from "../images/focus.jpg"
 import RealTimeStrategyImg from "../images/startae-team.png"
-
+import ScrollAnimation from "react-animate-on-scroll"
 
 import CirComp from "../images/cirCompIcon.png"
 import BlkComp from "../images/blkCompIcon.png"
@@ -75,7 +75,7 @@ const Courses = () => {
               )}
 
               {selectedCourse === "realTimeStrategy" && (
-                <p style={{ fontSize: "28px" }}>
+                <p style={{ fontSize: "23px" }}>
                   By developing software using agile processes and the latest
                   DevSecOps technology, we’re creating innovative capabilities
                   at the scale and speed of need.
@@ -83,7 +83,7 @@ const Courses = () => {
               )}
             </div>
           </div>
-
+          <ScrollAnimation animateIn="fadeInRight">
           <div className={courseStyles.skewCardBackCourse}>
             <div className={courseStyles.courses}>
               <div
@@ -93,14 +93,16 @@ const Courses = () => {
                 <img src={BlkComp} alt="" />
                 <p className={courseStyles.courseTextP}>Mission</p>
               </div>
-              <img
-                src={BodyLine}
-                alt=""
-                className={courseStyles.coursesDivide}
-                style={{
-                  opacity: selectedCourse === "mission" && 1,
-                }}
-              />
+              <ScrollAnimation animateIn="fadeInUp">
+                <img
+                  src={BodyLine}
+                  alt=""
+                  className={courseStyles.coursesDivide}
+                  style={{
+                    opacity: selectedCourse === "mission" && 1,
+                  }}
+                />
+              </ScrollAnimation>
 
               <div
                 className={courseStyles.courseItem}
@@ -109,14 +111,16 @@ const Courses = () => {
                 <img src={CirComp} alt="" />
                 <p className={courseStyles.courseTextP}>Focus</p>
               </div>
-              <img
-                src={BodyLine}
-                alt=""
-                className={courseStyles.coursesDivide}
-                style={{
-                  opacity: selectedCourse === "focus" && 1,
-                }}
-              />
+              <ScrollAnimation animateIn="fadeInUp">
+                <img
+                  src={BodyLine}
+                  alt=""
+                  className={courseStyles.coursesDivide}
+                  style={{
+                    opacity: selectedCourse === "focus" && 1,
+                  }}
+                />
+              </ScrollAnimation>
 
               <div className={courseStyles.courseSpacer} />
               <div
@@ -130,16 +134,21 @@ const Courses = () => {
                   Strategy
                 </p>
               </div>
-              <img
-                src={BodyLine}
-                alt=""
-                className={courseStyles.coursesDivide}
-                style={{
-                  opacity: selectedCourse === "realTimeStrategy" && 1,
-                }}
-              />
+              <ScrollAnimation animateIn="fadeInUp">
+                <img
+                  src={BodyLine}
+                  alt=""
+                  className={courseStyles.coursesDivide}
+                  style={{
+                    opacity: selectedCourse === "realTimeStrategy" && 1,
+                  }}
+                />
+              </ScrollAnimation>
             </div>
           </div>
+          </ScrollAnimation>
+
+
         </content>
       </div>
 
