@@ -45,7 +45,7 @@ const NavBarLevel = () => {
 						<Nav.Link
 							rel="relativeanchor"
 							className={navStyles.navLink}
-							href="#courses"
+							href="#collaborate"
 						>
 							Collaborate
 						</Nav.Link>
