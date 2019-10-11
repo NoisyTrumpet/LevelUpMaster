@@ -19,7 +19,7 @@ const NavBarLevel = () => {
 						<a id="toAbout" rel="relativeanchor" href="#about">
 							About
 						</a>
-						<a id="toCollaborate" rel="relativeanchor" href="#courses">
+						<a id="toCollaborate" rel="relativeanchor" href="#collaborate">
 							Collaborate
 						</a>
 						<a id="toContact" rel="relativeanchor" href="#contact">
