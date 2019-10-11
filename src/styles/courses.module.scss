@@ -34,10 +34,11 @@
 	position: relative;
 	right: 50px;
 
-	background-image: url("../images/levelUP3.jpg");
+	//background-image: url("../images/levelUP3.jpg");
 	background-position: 0 -25px;
 	background-repeat: no-repeat;
 	background-size: 560px;
+
 }
 
 .skewCardBackCourse {
@@ -80,14 +81,21 @@
 }
 
 .courseItem {
+	cursor: pointer;
 	transform: skewX(.15rad);
 	display: inline-flex;
 	text-align: left;
 	align-items: center;
     justify-content: space-between;
     color: #5c6061;
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
+	transition: 0.5s;
+
+	:hover{
+		opacity: 0.8;
+	}
 }
+
 
 .coursesDivide {
 	transform: skewX(.15rad);
@@ -95,6 +103,7 @@
 	width: 100%;
 	height: auto;
 	margin: -2.5rem auto 3rem 1rem;
+	opacity: 0;
 }
 
 .courseItem img {
@@ -103,6 +112,7 @@
 	height: 100%;
 	margin: auto 2rem;
 }
+
 
 .courseItem p{
 	margin: auto;
@@ -149,10 +159,10 @@
 	height: 650px;
 	right: 70px;
 
-	background-image: url("../images/levelUP3.jpg");
 	background-position: 0 -25px;
 	background-size: 500px;
 }
+
 .skewCardBackCourse {
 	transform: skewX(-.10rad);
 	width: 500px;
@@ -176,6 +186,7 @@
 	width: 100%;
 	height: auto;
 	margin: -2.5rem auto 3rem 1rem;
+	opacity: 0;
 }
 .courseItem img {
 	max-height: 90px;
