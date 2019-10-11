@@ -3,7 +3,7 @@ import { COLORS } from "../styles/constants"
 
 import BodyLine from "../images/bodyLine.png"
 import MissionImg from "../images/levelUP3.jpg"
-import FocusImg from "../images/levelUp17.jpg"
+import FocusImg from "../images/focus.jpg"
 import RealTimeStrategyImg from "../images/startae-team.png"
 
 
