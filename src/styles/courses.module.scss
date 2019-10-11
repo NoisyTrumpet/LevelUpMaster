@@ -26,7 +26,7 @@
 	/*transform: skewX(0rad);*/
 	transform: skewX(-.15rad);
 	background: #fff;
-	box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+	box-shadow: 3px 3px 30px rgba(0,0,0,0.4);
 	width: 550px;
 	height: 650px;
 	// margin: auto;
@@ -44,7 +44,7 @@
 .skewCardBackCourse {
 	/*transform: skewX(0rad);*/
 	transform: skewX(-.15rad);
-	box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+	box-shadow: 3px 3px 30px rgba(0,0,0,0.6);
 	width: 550px;
 	height: 650px;
 	margin: auto;
@@ -348,14 +348,31 @@
 }
 }
 
+@media (min-width: 751px) and (max-width: 1022px) {
+	.coursesSect {
+		margin-top: 5rem;
+		left: 5%;
+	}
+
+	.courseMain {
+		padding-bottom: 1rem;
+	}
+}
+
 @media (max-width: 375px){
-	.mobContCourses {
+.mobContCourses {
 	background-color: #fff;
 	width: 83%;
 	margin: auto auto 1rem auto;
 	transform: skewX(-.05rad);
 	box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 }
+
+.coursesSect {
+	margin-top: 1rem;
+	left: 4%;
+}
+
 .mobContCourses p{
 	transform: skewX(.05rad);
 	font-family: "azo-sans-web";

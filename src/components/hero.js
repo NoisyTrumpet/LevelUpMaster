@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => {
       <div
         className={heroStyles.heroBanner}
         style={{
-          backgroundImage: `url(${heroImage})`,
+          backgroundImage: `linear-gradient(to top, rgba(255, 255 , 255, .5), rgba(255, 255, 255, 0)), url(${heroImage})`,
           position: "absolute",
           backgroundSize: "cover",
           top: 0,
@@ -52,10 +52,12 @@ const Header = ({ siteTitle }) => {
           </h2>
         </ScrollAnimation>
         <img src={HeroLine} className={heroStyles.heroDivide} alt="" />
-        <h1 className={heroStyles.heroDes} style={{ color: COLORS.darkGray }}>
-          <strong>LevelUP Code Works</strong> is a U.S. Air Force software
-          development outfit in San Antonio, Texas.
-        </h1>
+        <ScrollAnimation animateIn="fadeInUp">
+          <h1 className={heroStyles.heroDes} style={{ color: COLORS.darkGray }}>
+            <strong>LevelUP Code Works</strong> is a U.S. Air Force software
+            development outfit in San Antonio, Texas.
+          </h1>
+        </ScrollAnimation>
         <a rel="relativeanchor" href="#about">
           <div className={heroStyles.dwnPad}>
             <span
@@ -64,10 +66,7 @@ const Header = ({ siteTitle }) => {
           </div>
         </a>
       </div>
-      
-      <div className={heroStyles.gradient}>
-        
-      </div>
+
     </div>
   )
 }

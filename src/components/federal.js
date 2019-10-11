@@ -4,7 +4,7 @@ import fedStyles from "../styles/federal.module.scss"
 
 const Federal = () => {
   return (
-    <div className={fedStyles.federal}>
+    <div className={fedStyles.federal} id="collaborate">
       <div className={fedStyles.federalMain}>
         <div className={fedStyles.federalback}>
           <div className={fedStyles.federalCont}>
