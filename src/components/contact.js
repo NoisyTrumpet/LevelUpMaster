@@ -13,7 +13,7 @@ const Contact = () => {
     <div className={`${contactStyles.contactInfo} ${contactStyles.contactCont}`}>
       <h3>Get in Touch</h3>
         <ul>
-          <li><img src={Email} alt="" className={contactStyles.emailIcon} />AFLCMC.HNCP.LevelUP@us.af.mil</li>
+            <li><a class="emailLink" href="mailto:AFLCMC.HNCP.LevelUP@us.af.mil"><img src={Email} alt="" className={contactStyles.emailIcon} />AFLCMC.HNCP.LevelUP@us.af.mil</a></li>
         </ul>
     </div>
 

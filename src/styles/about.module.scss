@@ -109,7 +109,6 @@
 }
 
 
-
 .bottomSect {
 	font-family: "azo-sans-web";
 	text-align: center;
@@ -206,6 +205,7 @@
 @media (width: 640px) {
     .aboutSect {
 		margin: 1rem auto !important;
+		padding-top: 10px;
 	}
 
 	.bottomSect {
@@ -344,139 +344,151 @@
 }
 
 
-@media (max-width: 1023px){
+@media (max-width: 1023px) {
 	.aboutMain {
-	right: 0;
-}
+		right: 0;
+	}
+
 	.aboutSect {
-	left: 0;
-	top: 0;
-	margin: 8rem auto 5rem auto;
-}
-.cardSect {
-	display: none;
-}
+		left: 0;
+		top: 0;
+		margin: 8rem auto 5rem auto;
+	}
 
-.mobBack {
-	display: flex;
-	width: 100%;
-	height: 680px;
-	background-image: url("../images/aboutCode.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	margin: 0;
-	padding: 1rem;
-}
-.mobCont {
-	background-color: #fff;
-	width: 80%;
-	height: 70%;
-	margin: auto;
-	transform: skewX(-.10rad);
-	vertical-align: middle;
-}
-.cardSubTitle{
-	font-family: "Ready Player One";
-	text-align: center;
-	font-size: 2.8rem;
-	font-weight: 500;
-	margin: auto;
-	padding: 3rem 5px 0 5px;
-	color: #2C65AC;
-	transform: skewX(.10rad);
-}
-.cardSubTitle img {
-	width: 100%;
-	max-width: 350px;
-	padding: 0 5px;
-}
-.mobCont p{
-	transform: skewX(.10rad);
-	font-family: "azo-sans-web";
-	position: relative;
-	max-width: 425px;
-	left: 5px;
-	margin: -15px auto auto auto;
-	font-size: 1rem;
-	font-weight: 400;
-	padding: 0 15px;
-}
-.bottomSect {
-	margin: 8rem auto;
-	left: 0;
-}
-.bottomSect h2 {
-	font-size: 1.6rem;
-}
-.botChan1 {
-	line-height: 7rem;
-}
+	.cardSect {
+		display: none;
+	}
 
+	.mobBack {
+		display: flex;
+		width: 100%;
+		height: 680px;
+		background-image: url("../images/aboutCode.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		margin: 0;
+		padding: 1rem;
+	}
 
-.sideLine{
-	display: none;
-}
+	.mobCont {
+		background-color: #fff;
+		width: 80%;
+		height: 70%;
+		margin: auto;
+		transform: skewX(-.10rad);
+		vertical-align: middle;
+	}
+
+	.cardSubTitle{
+		font-family: "Ready Player One";
+		text-align: center;
+		font-size: 2.8rem;
+		font-weight: 500;
+		margin: auto;
+		padding: 3rem 5px 0 5px;
+		color: #2C65AC;
+		transform: skewX(.10rad);
+	}
+
+	.cardSubTitle img {
+		width: 100%;
+		max-width: 350px;
+		padding: 0 5px;
+	}
+
+	.mobCont p{
+		transform: skewX(.10rad);
+		font-family: "azo-sans-web";
+		position: relative;
+		max-width: 425px;
+		left: 5px;
+		margin: -15px auto auto auto;
+		font-size: 1rem;
+		font-weight: 400;
+		padding: 0 15px;
+	}
+
+	.bottomSect {
+		margin: 8rem auto;
+		left: 0;
+	}
+
+	.bottomSect h2 {
+		font-size: 1.6rem;
+	}
+
+	.botChan1 {
+		line-height: 7rem;
+	}
+
+	.sideLine{
+		display: none;
+	}
 }
 
 
 @media (min-width: 376px) and (max-width: 750px){
-.aboutSect {
-	margin: 10rem auto 6rem auto;
-}
-.cardSubTitle{
-	font-size: 2.7rem !important;
-}
+	.aboutSect {
+		margin: 10rem auto 6rem auto;
+	}
+	.cardSubTitle{
+		font-size: 2.7rem !important;
+	}
 }
 
 @media (max-width: 375px){
-.aboutSect {
-	font-size: 3rem;
-	margin: 1rem auto 2rem auto;
-}
+	.aboutSect {
+		font-size: 3rem;
+		margin: 1rem auto 2rem auto;
+	}
 
-.aboutMain {
-	margin-top: 6rem;
-	padding-bottom: 1px;
-}
-.mobCont {
-	width: 90%;
-	height: 75%;
-	transform: skewX(-.05rad);
-}
-.cardSubTitle{
-	font-size: 2.5rem !important;
-	transform: skewX(.05rad);
-}
-.mobCont p{
-	transform: skewX(.05rad);
-	font-family: "azo-sans-web";
-	position: relative;
-	max-width: 430px;
-	left: 5px;
-	margin: -15px auto auto auto;
-	font-size: 1.1rem;
-	font-weight: 400;
-	padding: 0 15px;
-}
-.bottomSect {
-	margin: 8rem auto;
-	left: 0;
-}
+	.aboutMain {
+		margin-top: 6rem;
+		padding-bottom: 1px;
+	}
 
-.bottomSect h2 {
-	font-size: 1.2rem;
-}
+	.mobCont {
+		width: 90%;
+		height: 75%;
+		transform: skewX(-.05rad);
+	}
 
-.botChan1 {
-	line-height: 6.5rem;
-	font-size: 4.5rem;
-}
+	.cardSubTitle {
+		font-size: 2.5rem !important;
+		transform: skewX(.05rad);
+	}
 
-.bottomLine {
-	width: 100%;
-	max-width: 280px;
-}
+	.mobCont p {
+		transform: skewX(.05rad);
+		font-family: "azo-sans-web";
+		position: relative;
+		max-width: 430px;
+		left: 5px;
+		margin: -15px auto auto auto;
+		font-size: 1.1rem;
+		font-weight: 400;
+		padding: 0 15px;
+	}
+
+	.bottomSect {
+		margin: 8rem auto;
+		left: 0;
+	}
+
+	.bottomSect h2 {
+		font-size: 1.2rem;
+	}
+
+	.botChan1 {
+		line-height: 6.5rem;
+		font-size: 4.5rem;
+	}
+
+	.bottomLine {
+		width: 100%;
+		max-width: 280px;
+	}
 }
 
 

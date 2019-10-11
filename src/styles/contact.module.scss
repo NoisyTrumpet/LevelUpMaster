@@ -43,6 +43,16 @@
 	vertical-align: middle;
 }
 
+.emailLink {
+	text-decoration: none;
+	color: rgb(59, 100, 167) !important;
+}
+
+.emailLink:hover {
+	text-decoration: none;
+	color: rgb(59, 100, 167) !important;
+}
+
 //iPhone 6/7/8 landscape 
 
 @media (width: 667px) {

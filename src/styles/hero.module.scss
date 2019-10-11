@@ -96,13 +96,21 @@
 	}
 
 	.heroCont {
-		margin: 9px !important;
+		margin: 1rem !important;
 	}
 
 	.heroMain {
 		padding: 1px 0 !important;
 	};
 
+	.padImg {
+		visibility: hidden;
+	}
+}
+
+//Galaxy S5 landscape
+
+@media (width: 640px) {
 	.padImg {
 		visibility: hidden;
 	}
