@@ -27,7 +27,7 @@ const NavBarLevel = () => {
 						</a>
 					</div>
 				</div>
-				<Navbar.Brand href="/">
+				<Navbar.Brand href="#top">
 					<img className={navStyles.navLogo} src={Logo} alt="" />
 				</Navbar.Brand>
 				<div className={navStyles.spacer}>
