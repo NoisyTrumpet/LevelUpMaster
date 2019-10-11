@@ -130,6 +130,23 @@
     color: #70f700;
 }
 
+//Galaxy S5
+
+@media (width: 360px) {
+    .footerLinks {
+        display: block;
+        float: left;
+        padding-bottom: 1rem;
+        padding: 1px !important;
+    }
+}
+
+//Galaxt 5S landscape
+
+@media (width: 640px) {
+    
+}
+
 
 @media (min-width: 1113px) and (max-width: 1366px){
 .footerLinks1 {

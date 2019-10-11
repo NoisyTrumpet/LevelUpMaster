@@ -8,8 +8,8 @@ import aboutStyles from "../styles/about.module.scss"
 
 const About = () => {
   return (
-    <div id="about" className={aboutStyles.aboutMain}>
-      <h1 className={aboutStyles.aboutSect}>About</h1>
+    <div className={aboutStyles.aboutMain}>
+      <h1 className={aboutStyles.aboutSect} id="about">About</h1>
 
       <div className={aboutStyles.mobBack}>
         <div className={aboutStyles.mobCont}>

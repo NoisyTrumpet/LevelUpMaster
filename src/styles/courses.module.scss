@@ -127,6 +127,23 @@
 	right: -250px;
 }*/
 
+//iPhone 6/7/8 landscape 
+
+@media (width: 667px) {
+	.courseMain {
+		padding-bottom: 1rem;
+	}
+}
+
+//Pixel 2 XL landscape
+
+@media (width: 823 px) {
+	.courseMain {
+		padding: 1rem;
+	}
+}
+
+
 
 
 @media (min-width: 1112px) and (max-width: 1245px){

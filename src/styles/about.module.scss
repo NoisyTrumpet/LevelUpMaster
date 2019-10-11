@@ -147,6 +147,15 @@
 	}
 }
 
+//iPhone 6/7/8 landscape
+
+@media (width: 667px) {
+	.aboutSect {
+		padding: 1px 0 0 0;
+		margin: 4rem 0 0 0 !important;
+	}
+}
+
 //iPhone 6/7/8 Plus landscape view
 
 @media (width: 736px) {
@@ -155,8 +164,81 @@
 		margin: 4rem 0px 0px 0px !important;
 	}
 
-	
+	.bottomSect {
+		margin: 2rem auto;
+	}
 }
+
+//Galaxy S5
+
+@media (width: 360px) {
+
+	html {
+		max-width: 90% !important;
+		margin: 0 auto;
+	}
+
+	.mobBack {
+		background-size: cover;
+		height: auto;
+		width: 360px;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	.mobCont p {
+		font-size: 16px !important;
+	}
+
+	.cardSubTitle {
+		padding-top: 5px;
+	}
+
+	.aboutMain {
+		width: 100% !important;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+//Galaxt 5S landscape
+
+@media (width: 640px) {
+    .aboutSect {
+		margin: 1rem auto !important;
+	}
+
+	.bottomSect {
+		margin: 3rem auto !important;
+	}
+}
+
+//Pixel 2 landscape
+
+@media (width: 731px) {
+	.aboutSect {
+		margin: 1rem auto !important;
+		padding-top: 1rem !important;
+	}
+
+	.bottomSect {
+		margin: 5rem auto !important;
+	}
+}
+
+//Pixel 2 XL landscape
+
+@media (width: 823px) {
+	.aboutSect {
+		margin: 10px auto !important;
+		padding-top: 10px auto !important;
+	}
+
+	.bottomSect {
+		margin: 5rem auto !important;
+	}
+}
+
 
 @media (min-width: 1246px) and (max-width: 1366px){
 	.aboutSect {
@@ -354,6 +436,7 @@
 }
 
 .aboutMain {
+	margin-top: 6rem;
 	padding-bottom: 1px;
 }
 .mobCont {

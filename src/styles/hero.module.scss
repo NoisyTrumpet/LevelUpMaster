@@ -44,7 +44,7 @@
 	font-size: 22px;
 }
 
-.gradient{
+.gradient {
 	position: absolute;
 	bottom: 4%;
 	left: 0%;
@@ -56,26 +56,56 @@
     );
     z-index: 1;
 }
-.dwnPad{
+
+.dwnPad {
 	position: absolute;
 	top: 80%;
 	left: 48%;
 	z-index: 5;
 }
 
-.padImg{
+.padImg {
 	width: 75px;
 	height: 75px;
 	background-size: cover;
 	display: block;
 	margin: 0 auto;
 }
-.padDwn{
+.padDwn {
 	background-image: url("../images/padDown.svg");
 
 }
-.padDwn:hover, .padDwn:focus{
+.padDwn:hover, .padDwn:focus {
 	background-image: url("../images/padDownHover.svg");
+}
+
+//iPhone 6/7/8 landscape
+
+@media (width: 667px) {
+	.gradient {
+		position: absolute;
+		bottom: -5%;
+		left: 0%;
+		height: 450px;
+		width: 100%;
+		background-image:
+		linear-gradient(
+			rgba(255,255,255,0), rgba(255,255,255,1)
+		);
+		z-index: 1;
+	}
+
+	.heroCont {
+		margin: 9px !important;
+	}
+
+	.heroMain {
+		padding: 1px 0 !important;
+	};
+
+	.padImg {
+		visibility: hidden;
+	}
 }
 
 //iPhone X landscape view
@@ -134,6 +164,113 @@
 	}
 }
 
+//Galaxy S5
+
+@media (width: 360px) {
+	.heroTitle {
+		padding: 0 15px 0 15px;
+	}
+
+	.heroDivide {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.heroDes {
+		padding: 0 15px 0 15px;
+	}
+
+	.padImg {
+		margin: -36px auto !important;
+	}
+}
+
+//Galaxy 5S landscape
+
+@media (width: 640px) {
+    .heroBanner{
+		visibility: hidden;
+	}
+
+	.gradient {
+		visibility: hidden;
+	}
+
+	.heroMain {
+		padding: 0px !important;
+		margin: 0px !important;
+	}
+
+	.heroCont {
+		margin: 20px 0px 0px 10px !important;
+	}
+
+	.padImg {
+		margin: 75px auto !important;
+	}
+}
+
+//Pixel 2 landscape
+
+@media (width: 731px) {
+	.heroBanner{
+		visibility: hidden;
+	}
+
+	.gradient {
+		visibility: hidden;
+	}
+
+	.heroCont {
+		margin: 10px auto !important;
+	}
+
+	.padImg {
+		margin: 130px auto;
+	}
+}
+
+//Pixel 2 XL landscape
+
+@media (width: 823px) {
+	.heroBanner{
+		visibility: hidden;
+	}
+
+	.gradient {
+		visibility: hidden;
+	}
+
+	.heroMain {
+		margin: 1px auto;
+		padding: .5rem auto !important;
+	}
+
+	.heroCont {
+		margin: 1rem auto !important;
+	}
+
+	.padImg {
+		visibility: hidden;
+	}
+}
+
+//iPad mini landscape
+
+@media (width: 1024px) and (height: 768px) {
+	.padImg {
+		visibility: hidden;
+	}
+}
+
+//iPad Pro landscape
+
+@media (width: 1366px) {
+	html {
+		max-width: 1366px;
+	}
+
+}
 
 @media (min-width: 901px) and (max-width: 1200px){
 	.heroCont {

@@ -207,11 +207,19 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
 	}
 
-	.toolbar a {
-		font-size: 25px;
+	.navbar-link {
+		font-size: 30px;
 	}
 }
 
+//iPad Pro landscape
+
+@media (width: 1366px) {
+	.toolbar a {
+		font-size: 25px;
+		width: 100%;
+	}
+}
 
 
 @media (min-width: 900px){
@@ -220,8 +228,6 @@
 		display: none;
 	}
 }
-
-
 
 @media (max-width: 900px){
 	.toolbar{

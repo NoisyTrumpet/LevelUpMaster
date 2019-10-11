@@ -43,6 +43,14 @@
 	vertical-align: middle;
 }
 
+//iPhone 6/7/8 landscape 
+
+@media (width: 667px) {
+	.contact {
+		margin: 4rem auto 4rem auto;
+	}
+}
+
 // iPad Pro
 
 @media (width: 1024px) {

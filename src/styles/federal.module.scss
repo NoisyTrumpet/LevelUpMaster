@@ -72,6 +72,41 @@
 	margin: auto;
 }
 
+//iPhone 6/7/8 landscape 
+
+@media (width: 667px) {
+	.federal {
+		margin: 1rem auto;
+	}
+}
+
+//iPhone 6/7/8 Plus landscape view 
+
+@media (width: 736px) {
+	.federal {
+		margin: 1rem auto;
+	}
+}
+
+//Galaxy 5S landscape
+
+@media (width: 640px) {
+	.federal {
+		margin: 1rem auto;
+	}
+
+	.federalCont p {
+		font-size: 19px !important;
+	}
+}
+
+//Pixel 2 landscape
+
+@media (width: 731px) {
+	.federal {
+		margin: 1rem auto;
+	}
+}
 
 @media (min-width: 751px) and (max-width: 1022px) {
 
