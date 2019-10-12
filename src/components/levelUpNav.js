@@ -10,9 +10,12 @@ import Headroom from "react-headroom"
 
 const NavBarLevel = () => {
 	return (
-		<Headroom className={navStyles.headroomScrolled} style={{
-			zIndex: '12',
-		}}>
+		<Headroom
+			className={navStyles.headroomScrolled}
+			style={{
+				zIndex: "12",
+			}}
+		>
 			<Navbar className="toolbar" sticky="top" expand="lg">
 				<div id="MobileMenu" className={navStyles.mNav} tabIndex="0">
 					<div className={navStyles.mNavDropdown} id="top">

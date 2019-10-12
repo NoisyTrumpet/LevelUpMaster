@@ -92,7 +92,7 @@ const About = () => {
           We're here to
           <br />
           <ScrollAnimation
-      animateIn="bounce">
+      animateIn="fadeIn">
           <span className={aboutStyles.botChan1}>Win it</span>
           </ScrollAnimation>
         </h2>
