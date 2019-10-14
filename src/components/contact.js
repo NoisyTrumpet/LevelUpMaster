@@ -12,8 +12,8 @@ const Contact = () => {
 
     <div className={`${contactStyles.contactInfo} ${contactStyles.contactCont}`}>
       <h3>Get in Touch</h3>
-        <ul>
-            <a href="mailto:AFLCMC.HNCP.LevelUP@us.af.mil" target="_blank" rel="noopener noreferrer" id="contactEmail"><li><img src={Email} alt="" className={contactStyles.emailIcon} />AFLCMC.HNCP.LevelUP@us.af.mil</li></a>
+          <ul id="contactEmail">
+            <a href="mailto:AFLCMC.HNCP.LevelUP@us.af.mil" target="_blank" rel="noopener noreferrer"><li><img src={Email} alt="" className={contactStyles.emailIcon} />AFLCMC.HNCP.LevelUP@us.af.mil</li></a>
         </ul>
     </div>
 
