@@ -425,3 +425,21 @@
         max-width: 280px;
     }
 }
+
+//iPhone 6/7/8 landscape
+
+@media (width: 667px) {
+    .aboutSect {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+//iPhone X landscape
+
+@media (width: 812px) {
+    .aboutSect {
+        margin: 2rem;
+    }
+}

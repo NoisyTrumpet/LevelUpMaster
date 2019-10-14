@@ -43,6 +43,20 @@
 	vertical-align: middle;
 }
 
+#contactEmail li {
+	text-decoration: none !important;
+	
+}
+
+#contactEmail li:hover {
+	text-decoration: none !important;
+	color: #50CAF9;
+}
+
+#contactEmail li:active {
+	text-decoration: none !important;
+}
+
 // iPad Pro
 
 @media (width: 1024px) {
@@ -92,5 +106,21 @@
 	}
 	.contactCont {
 		font-size: 1.05rem;
+	}
+}
+
+//iPhone 6/7/8 landscape
+
+@media (width: 667px) {
+	.contact {
+		margin: 2rem auto 2rem auto;
+	}
+}
+
+//iPhone X landscape
+
+@media (width: 812px) {
+	.contact {
+		margin: 2rem auto 3rem auto;
 	}
 }
