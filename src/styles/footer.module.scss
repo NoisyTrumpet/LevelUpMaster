@@ -31,31 +31,38 @@
   width: 50px;
   height: 50px;
   background-size: cover;
+  transition: .5s ease;
 }
+
+.socialIcon:hover, .socialIcon:focus {
+    transform: scale(1.2);
+    transition: .5s ease;
+}
+
 .faceBook{
     background-image: url("../images/icons/facebook.svg");
 }
-.faceBook:hover, .faceBook:focus{
-    background-image: url("../images/icons/facebookHover.svg");
-}
+// .faceBook:hover, .faceBook:focus{
+//     background-image: url("../images/icons/facebookHover.svg");
+// }
 .instaGram{
     background-image: url("../images/icons/instagram.svg");
 }
-.instaGram:hover, .instaGram:focus{
-    background-image: url("../images/icons/instagramHover.svg");
-}
+// .instaGram:hover, .instaGram:focus{
+//     background-image: url("../images/icons/instagramHover.svg");
+// }
 .twitTer{
     background-image: url("../images/icons/twitter.svg");
 }
-.twitTer:hover, .twitTer:focus{
-    background-image: url("../images/icons/twitterHover.svg");
-}
+// .twitTer:hover, .twitTer:focus{
+//     background-image: url("../images/icons/twitterHover.svg");
+// }
 .linkeDin{
     background-image: url("../images/icons/linkedin.svg");
 }
-.linkeDin:hover, .linkeDin:focus{
-    background-image: url("../images/icons/linkedinHover.svg");
-}
+// .linkeDin:hover, .linkeDin:focus{
+//     background-image: url("../images/icons/linkedinHover.svg");
+// }
 
 
 .directUP{

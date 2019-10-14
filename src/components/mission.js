@@ -1,61 +1,61 @@
-import React, {Component} from "react"
-import courseStyles from "../styles/courses.module.scss"
-import BodyLine from "../images/bodyLine.png"
-import MissionImg from "../images/levelUP3.jpg"
+import React from "react"
 
-import CirComp from "../images/cirCompIcon.png"
-import BlkComp from "../images/blkCompIcon.png"
-import HandIcon from "../images/handIcon.png"
-import Mission from "./mission"
+const IconMission = ({
 
-
-class MissionComp extends Component {
-	render() {
-		<div className={courseStyles.cardSectCourse}>
-			<content
-				style={{
-					display: "grid",
-					alignItems: "center",
-					justifyContent: "center",
-					gridTemplateColumns: "repeat(auto-fit, minmax(240px, 340px))",
-					left: 0,
-					overflow: "visible",
-				}}
-			>
-				<div className={courseStyles.skewCardCourse}>
-					<div className={courseStyles.cardContCourse}>
-						<p>
-							LevelUP’s directive is to serve as a software factory to support a
-							full range of Air Force and DoD missions.
-						</p>
-					</div>
-				</div>
-
-				<div className={courseStyles.skewCardBackCourse}>
-					<div className={courseStyles.courses}>
-						<div className={courseStyles.courseItem}>
-							<img src={BlkComp} alt="" />
-							<p>Mission</p>
-						</div>
-						<img src={BodyLine} alt="" className={courseStyles.coursesDivide} />
-						<div className={courseStyles.courseItem}>
-							<img src={CirComp} alt="" />
-							<p>Focus</p>
-						</div>
-						<div className={courseStyles.courseSpacer} />
-						<div className={courseStyles.courseItem}>
-							<img src={HandIcon} alt="" />
-							<p>
-								Real Time
-								<br />
-								Strategy
-							</p>
-						</div>
-					</div>
-				</div>
-			</content>
-		</div>
-	}
-}
-
-export default MissionComp
+}) => (
+	<svg className={courseStyles.missionIcon} version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 92.821 92.821" style="enable-background:new 0 0 92.821 92.821;" xml:space="preserve">
+<g>
+	<g>
+		<path  d="M77.45,65.06V52.924h-4.452v9.702c0,1.517-1.242,2.756-2.756,2.756H15.106
+			c-1.514,0-2.756-1.238-2.756-2.756V29.554c0-1.521,1.242-2.759,2.756-2.759H46.65v-2.827H11.066c-1.739,0-3.167,1.417-3.167,3.16
+			v18.971V65.06v3.16L0,77.704c0,2.62,2.122,4.746,4.738,4.746h75.868c2.616,0,4.738-2.126,4.738-4.746l-7.899-9.484v-3.16H77.45z
+			 M49.002,80.864H36.354c-0.44,0-0.791-0.351-0.791-0.791s0.351-0.791,0.791-0.791h12.644c0.433,0,0.791,0.351,0.791,0.791
+			C49.782,80.513,49.435,80.864,49.002,80.864z M29.644,77.704l2.412-2.895h21.237l2.412,2.895
+			C55.705,77.704,29.644,77.704,29.644,77.704z"/>
+		<g>
+			<rect x="37.485" y="47.287"  width="6.603" height="6.596"/>
+			<rect x="41.622" y="38.219"  width="6.599" height="6.603"/>
+			<rect x="48.114" y="46.5"  width="6.599" height="6.599"/>
+			<rect x="53.361" y="35.534"  width="7.831" height="7.831"/>
+			<rect x="64.437" y="11.531"  width="7.831" height="7.831"/>
+			<rect x="50.229" y="25.693"  width="7.831" height="7.831"/>
+			<rect x="62.537" y="22.343"  width="11.184" height="11.184"/>
+			<rect x="70.89" y="35.824"  width="13.528" height="13.532"/>
+			<rect x="76.011" y="10.372"  width="16.81" height="16.81"/>
+			<rect x="60.518" y="44.263"  width="7.831" height="7.831"/>
+		</g>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+)
