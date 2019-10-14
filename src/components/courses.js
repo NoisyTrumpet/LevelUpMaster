@@ -7,9 +7,10 @@ import FocusImg from "../images/focus.jpg"
 import RealTimeStrategyImg from "../images/realTime.jpg"
 import ScrollAnimation from "react-animate-on-scroll"
 
-import CirComp from "../images/cirCompIcon.png"
-import BlkComp from "../images/blkCompIcon.png"
-import HandIcon from "../images/realTime.svg"
+import FocusIcon from "../SVG/focus.svg"
+import MissionIcon from "../SVG/mission.svg"
+import HandIcon from "../SVG/realTime.svg"
+
 
 import courseStyles from "../styles/courses.module.scss"
 
@@ -17,6 +18,7 @@ const Courses = () => {
   const [selectedCourse, setSelectedCourse] = useState("mission")
 
   return (
+
     <div id="courses" className={courseStyles.courseMain}>
       <h2
         className={courseStyles.coursesSect}
@@ -89,8 +91,9 @@ const Courses = () => {
               <div
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("mission")}
+
               >
-                <img src={BlkComp} alt="" />
+                <MissionIcon className={courseStyles.missionIcon} />
                 <p className={courseStyles.courseTextP}>Mission</p>
               </div>
               <ScrollAnimation animateIn="fadeInUp">
@@ -108,7 +111,7 @@ const Courses = () => {
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("focus")}
               >
-                <img src={CirComp} alt="" />
+                <FocusIcon className={courseStyles.focusIcon} />
                 <p className={courseStyles.courseTextP}>Focus</p>
               </div>
               <ScrollAnimation animateIn="fadeInUp">
@@ -127,7 +130,7 @@ const Courses = () => {
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("realTimeStrategy")}
               >
-                <img src={HandIcon} alt="" className={courseStyles.realTimeIcon} />
+                <HandIcon className={courseStyles.realTimeIcon} />
                 <p className={courseStyles.courseTextP}>
                   Real Time
                   <br />
@@ -195,7 +198,7 @@ const Courses = () => {
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("mission")}
               >
-                <img src={BlkComp} alt="" />
+                <MissionIcon className={courseStyles.missionIcon} />
                 <p>Mission</p>
               </div>
             </li>
@@ -213,7 +216,7 @@ const Courses = () => {
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("focus")}
               >
-                <img src={CirComp} alt="" />
+                <FocusIcon className={courseStyles.focusIcon} />
                 <p>Focus</p>
               </div>
             </li>
@@ -232,7 +235,7 @@ const Courses = () => {
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("realTimeStrategy")}
               >
-                <img src={HandIcon} alt="" />
+                <HandIcon className={courseStyles.realTimeIconMobile} />
                 <p>
                   Real Time
                   <br />
