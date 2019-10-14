@@ -189,7 +189,7 @@ const Courses = () => {
           )}
         </div>
         <div className={courseStyles.mobSectCourses}>
-          <ul>
+          <ul class="coursesListItem">
             <li>
               <div
                 className={courseStyles.courseItem}
