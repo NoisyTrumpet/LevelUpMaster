@@ -13,7 +13,7 @@ const Contact = () => {
     <div className={`${contactStyles.contactInfo} ${contactStyles.contactCont}`}>
       <h3>Get in Touch</h3>
           <ul id="contactEmail">
-            <a href="mailto:AFLCMC.HNCP.LevelUP@us.af.mil" target="_blank" rel="noopener"><li><img src={Email} alt="" className={contactStyles.emailIcon} />AFLCMC.HNCP.LevelUP@us.af.mil</li></a>
+            <a href="mailto:AFLCMC.HNCP.LevelUP@us.af.mil" target="_blank" rel="noopener noreferrer"><li><img src={Email} alt="" className={contactStyles.emailIcon} />AFLCMC.HNCP.LevelUP@us.af.mil</li></a>
         </ul>
     </div>
 
