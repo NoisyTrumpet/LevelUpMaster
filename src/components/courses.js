@@ -9,7 +9,7 @@ import ScrollAnimation from "react-animate-on-scroll"
 
 import CirComp from "../images/cirCompIcon.png"
 import BlkComp from "../images/blkCompIcon.png"
-import HandIcon from "../images/handIcon.png"
+import HandIcon from "../images/realTime.svg"
 
 import courseStyles from "../styles/courses.module.scss"
 
@@ -31,7 +31,7 @@ const Courses = () => {
       </h2>
 
       <div className={courseStyles.cardSectCourse}>
-        <content
+        <div
           style={{
             display: "grid",
             alignItems: "center",
@@ -127,7 +127,7 @@ const Courses = () => {
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("realTimeStrategy")}
               >
-                <img src={HandIcon} alt="" />
+                <img src={HandIcon} alt="" className={courseStyles.realTimeIcon} />
                 <p className={courseStyles.courseTextP}>
                   Real Time
                   <br />
@@ -149,7 +149,7 @@ const Courses = () => {
           </ScrollAnimation>
 
 
-        </content>
+        </div>
       </div>
 
       <div className={courseStyles.mobBackCourses}>

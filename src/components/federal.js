@@ -20,7 +20,7 @@ const Federal = () => {
             </p>
 
             <div className={fedStyles.fedButton}>
-              <a href="https://www.fbo.gov/">
+              <a href="https://www.fbo.gov/" rel="noopener noreferrer" target="_blank">
                 <button>
                 <h4>LevelUP</h4>
               </button>

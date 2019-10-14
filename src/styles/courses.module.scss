@@ -22,6 +22,15 @@
 	font-family: 'azo-sans-web';
 }
 
+
+.realTimeIcon {
+	color: blue!important;
+}
+
+.missionIcon:hover {
+	fill: red;
+}
+
 .skewCardCourse {
 	/*transform: skewX(0rad);*/
 	transform: skewX(-.15rad);
