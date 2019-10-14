@@ -98,7 +98,7 @@
     }
 
     .padImg {
-        margin: 407px auto;
+        margin: 250px auto;
     }
 
     .heroMain {
@@ -110,11 +110,7 @@
 //iPhone 6/7/8 Plus landscape view
 
 @media (width: 736px) {
-    .heroBanner {
-        visibility: hidden;
-    }
-
-    .gradient {
+    .heroBanner, .graident {
         visibility: hidden;
     }
 
@@ -133,6 +129,22 @@
 
     .padImg {
         margin: 160px auto;
+    }
+}
+
+//iPhone 6/7/8 landscape view
+
+@media (width: 667px) {
+    .heroBanner, .gradient, .padImg {
+        visibility: hidden;
+    }
+
+    .heroMain {
+        padding: 0px !important;
+    }
+
+    .heroCont {
+        margin-top: 2rem !important;
     }
 }
 
