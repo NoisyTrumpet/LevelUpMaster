@@ -17,7 +17,6 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 
-
 const Courses = () => {
   const [selectedCourse, setSelectedCourse] = useState("mission")
 
@@ -46,7 +45,6 @@ const Courses = () => {
             overflow: "visible",
           }}
         >
-        
           <div
             className={courseStyles.skewCardCourse}
             style={{
@@ -164,7 +162,7 @@ const Courses = () => {
                     Strategy
                   </p>
                 </div>
-                <ScrollAnimation animateIn="fadeInUp">
+                <ScrollAnimation animateIn="fadeInUp" initiallyVisible={true}>
                   <img
                     src={BodyLine}
                     alt=""
@@ -184,43 +182,44 @@ const Courses = () => {
         <div className={courseStyles.mobContCourses}>
           {selectedCourse === "mission" && (
             <ScrollAnimation animateIn="fadeIn">
-            <Fragment>
-              <img src={MissionImg} alt="" />
-              <p>
-                <span style={{ fontWeight: "bold" }}>LevelUP's</span> directive
-                is to serve as a software factory to support a full range of Air
-                Force and DoD missions.
-              </p>
-            </Fragment>
+              <Fragment>
+                <img src={MissionImg} alt="" />
+                <p>
+                  <span style={{ fontWeight: "bold" }}>LevelUP's</span>{" "}
+                  directive is to serve as a software factory to support a full
+                  range of Air Force and DoD missions.
+                </p>
+              </Fragment>
             </ScrollAnimation>
           )}
 
           {selectedCourse === "focus" && (
             <ScrollAnimation animateIn="fadeIn">
-            <Fragment>
-              <img src={FocusImg} alt="" />
-              <p>
-                Although our initial area of focus supports a range of Air Force
-                missions, <span style={{ fontWeight: "bold" }}>LevelUP</span>{" "}
-                will broaden its software development services to other
-                functional areas. This includes a Unified Platform that will
-                allow greater operational capabilities between the U.S. Air
-                Force, U.S. Army, U.S. Navy, U.S. Marines and U.S. Coast Guard.
-              </p>
-            </Fragment>
+              <Fragment>
+                <img src={FocusImg} alt="" />
+                <p className={courseStyles.focusTextMobile}>
+                  Although our initial area of focus supports a range of Air
+                  Force missions,{" "}
+                  <span style={{ fontWeight: "bold" }}>LevelUP</span> will
+                  broaden its software development services to other functional
+                  areas. This includes a Unified Platform that will allow
+                  greater operational capabilities between the U.S. Air Force,
+                  U.S. Army, U.S. Navy, U.S. Marines and U.S. Coast Guard.
+                </p>
+              </Fragment>
             </ScrollAnimation>
           )}
 
           {selectedCourse === "realTimeStrategy" && (
             <ScrollAnimation animateIn="fadeIn">
-            <Fragment>
-              <img src={RealTimeStrategyImg} alt="" />
-              <p>
-                By developing software using agile processes and the latest
-                DevSecOps technology, we’re creating innovative capabilities at
-                the scale and speed of need.
-              </p>
-            </Fragment>
+              <Fragment>
+                <img src={RealTimeStrategyImg} alt="" />
+                <p>
+                  By developing software using agile processes and the latest
+                  DevSecOps technology, we’re creating innovative capabilities
+                  at the scale and speed of need.
+                </p>
+              </Fragment>
             </ScrollAnimation>
           )}
         </div>
@@ -244,17 +243,17 @@ const Courses = () => {
                   </p>
                 </div>
                 <ScrollAnimation animateIn="fadeInUp">
-                <img
-                  src={BodyLine}
-                  alt=""
-                  className={courseStyles.coursesDivide}
-                  style={{
-                    opacity: selectedCourse === "mission" && 1,
-                    maxWidth: "90%",
-                    display: "block",
-                    margin: "auto",
-                  }}
-                />
+                  <img
+                    src={BodyLine}
+                    alt=""
+                    className={courseStyles.coursesDivide}
+                    style={{
+                      opacity: selectedCourse === "mission" && 1,
+                      maxWidth: "90%",
+                      display: "block",
+                      margin: "auto",
+                    }}
+                  />
                 </ScrollAnimation>
               </Col>
               <Col xs="4" sm="4" md="4">
@@ -274,17 +273,17 @@ const Courses = () => {
                   </p>
                 </div>
                 <ScrollAnimation animateIn="fadeInUp">
-                <img
-                  src={BodyLine}
-                  alt=""
-                  className={courseStyles.coursesDivide}
-                  style={{
-                    opacity: selectedCourse === "focus" && 1,
-                    maxWidth: "90%",
-                    display: "block",
-                    margin: "auto",
-                  }}
-                />
+                  <img
+                    src={BodyLine}
+                    alt=""
+                    className={courseStyles.coursesDivide}
+                    style={{
+                      opacity: selectedCourse === "focus" && 1,
+                      maxWidth: "90%",
+                      display: "block",
+                      margin: "auto",
+                    }}
+                  />
                 </ScrollAnimation>
               </Col>
               <Col xs="4" sm="4" md="4">
@@ -306,18 +305,18 @@ const Courses = () => {
                     Strategy
                   </p>
                 </div>
-                <ScrollAnimation animateIn="fadeInUp">
-                <img
-                  src={BodyLine}
-                  alt=""
-                  className={courseStyles.coursesDivide}
-                  style={{
-                    opacity: selectedCourse === "realTimeStrategy" && 1,
-                    maxWidth: "90%",
-                    display: "block",
-                    margin: "auto",
-                  }}
-                />
+                <ScrollAnimation animateIn="fadeInUp" initiallyVisible={true}>
+                  <img
+                    src={BodyLine}
+                    alt=""
+                    className={courseStyles.coursesDivide}
+                    style={{
+                      opacity: selectedCourse === "realTimeStrategy" && 1,
+                      maxWidth: "90%",
+                      display: "block",
+                      margin: "auto",
+                    }}
+                  />
                 </ScrollAnimation>
               </Col>
             </Row>

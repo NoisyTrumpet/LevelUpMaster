@@ -275,7 +275,9 @@
 }
 
 @media (max-width: 1023px){
-
+	.focusTextMobile {
+		font-size: 1rem !important;
+	}
 	.coursesSect {
 		left: 2%;
 		top: 0;
@@ -396,6 +398,10 @@
 		margin: auto auto 1rem auto;
 		transform: skewX(-.05rad);
 		box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+	}
+
+	.focusTextMobile {
+		font-size: 0.8rem !important;
 	}
 
 	.coursesSect {
