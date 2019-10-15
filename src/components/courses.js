@@ -11,17 +11,13 @@ import FocusIcon from "../SVG/focus.svg"
 import MissionIcon from "../SVG/mission.svg"
 import HandIcon from "../SVG/realTime.svg"
 
-
 import courseStyles from "../styles/courses.module.scss"
-
-
+import "../styles/coursesAdjust.css"
 
 const Courses = () => {
   const [selectedCourse, setSelectedCourse] = useState("mission")
 
-
   return (
-
     <div id="courses" className={courseStyles.courseMain}>
       <h2
         className={courseStyles.coursesSect}
@@ -89,74 +85,74 @@ const Courses = () => {
             </div>
           </div>
           <ScrollAnimation animateIn="fadeInRight">
-          <div className={courseStyles.skewCardBackCourse}>
-            <div className={courseStyles.courses}>
-              <div
-                className={courseStyles.courseItem}
-                onClick={() => setSelectedCourse("mission")}
-              >
-              
-                <MissionIcon
-                 className={`${courseStyles.missionIcon} ${selectedCourse}`} />
-                <p 
-                className={`${courseStyles.courseTextP} ${selectedCourse}`}>Mission</p>
-              </div>
-              <ScrollAnimation animateIn="fadeInUp">
-                <img
-                  src={BodyLine}
-                  alt=""
-                  className={courseStyles.coursesDivide}
-                  style={{
-                    opacity: selectedCourse === "mission" && 1,
-                  }}
-                />
-              </ScrollAnimation>
+            <div className={courseStyles.skewCardBackCourse}>
+              <div className={courseStyles.courses}>
+                <div
+                  className={courseStyles.courseItem}
+                  onClick={() => setSelectedCourse("mission")}
+                >
+                  <MissionIcon
+                    className={`${courseStyles.missionIcon} ${selectedCourse === "mission"} missionIcon`}
+                  />
+                  <p
+                    className={`${courseStyles.courseTextP} ${selectedCourse === "mission"} missionText`}
+                  >
+                    Mission
+                  </p>
+                </div>
+                <ScrollAnimation animateIn="fadeInUp">
+                  <img
+                    src={BodyLine}
+                    alt=""
+                    className={courseStyles.coursesDivide}
+                    style={{
+                      opacity: selectedCourse === "mission" && 1,
+                    }}
+                  />
+                </ScrollAnimation>
 
-              <div
-                className={courseStyles.courseItem}
-                onClick={() => setSelectedCourse("focus")}
-              >
-                <FocusIcon className={courseStyles.focusIcon} />
-                <p className={courseStyles.courseTextP}>Focus</p>
-              </div>
-              <ScrollAnimation animateIn="fadeInUp">
-                <img
-                  src={BodyLine}
-                  alt=""
-                  className={courseStyles.coursesDivide}
-                  style={{
-                    opacity: selectedCourse === "focus" && 1,
-                  }}
-                />
-              </ScrollAnimation>
+                <div
+                  className={courseStyles.courseItem}
+                  onClick={() => setSelectedCourse("focus")}
+                >
+                  <FocusIcon className={`${courseStyles.focusIcon} ${selectedCourse === "focus"} focusIcon`} />
+                  <p className={`${courseStyles.courseTextP} ${selectedCourse === "focus"} focusText`}>Focus</p>
+                </div>
+                <ScrollAnimation animateIn="fadeInUp">
+                  <img
+                    src={BodyLine}
+                    alt=""
+                    className={courseStyles.coursesDivide}
+                    style={{
+                      opacity: selectedCourse === "focus" && 1,
+                    }}
+                  />
+                </ScrollAnimation>
 
-              <div className={courseStyles.courseSpacer} />
-              <div
-                className={courseStyles.courseItem}
-                onClick={() => setSelectedCourse("realTimeStrategy")}
-              >
-                <HandIcon className={courseStyles.realTimeIcon} />
-                <p className={courseStyles.courseTextP}>
-                  Real Time
-                  <br />
-                  Strategy
-                </p>
+                <div
+                  className={courseStyles.courseItem}
+                  onClick={() => setSelectedCourse("realTimeStrategy")}
+                >
+                  <HandIcon className={`${courseStyles.realTimeIcon} ${selectedCourse === "realTimeStrategy"} realTimeIcon`} />
+                  <p className={`${courseStyles.courseTextP} ${selectedCourse === "realTimeStrategy"} realTimeText`}>
+                    Real Time
+                    <br />
+                    Strategy
+                  </p>
+                </div>
+                <ScrollAnimation animateIn="fadeInUp">
+                  <img
+                    src={BodyLine}
+                    alt=""
+                    className={courseStyles.coursesDivide}
+                    style={{
+                      opacity: selectedCourse === "realTimeStrategy" && 1,
+                    }}
+                  />
+                </ScrollAnimation>
               </div>
-              <ScrollAnimation animateIn="fadeInUp">
-                <img
-                  src={BodyLine}
-                  alt=""
-                  className={courseStyles.coursesDivide}
-                  style={{
-                    opacity: selectedCourse === "realTimeStrategy" && 1,
-                  }}
-                />
-              </ScrollAnimation>
             </div>
-          </div>
           </ScrollAnimation>
-
-
         </div>
       </div>
 
@@ -203,8 +199,8 @@ const Courses = () => {
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("mission")}
               >
-                <MissionIcon className={courseStyles.missionIcon} />
-                <p>Mission</p>
+                <MissionIcon className={`${courseStyles.missionIcon} ${selectedCourse === "mission"} missionIcon`} />
+                <p className={`${courseStyles.courseTextP} ${selectedCourse === "mission"} missionText`}>Mission</p>
               </div>
             </li>
             <img
@@ -221,8 +217,8 @@ const Courses = () => {
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("focus")}
               >
-                <FocusIcon className={courseStyles.focusIcon} />
-                <p>Focus</p>
+                <FocusIcon className={`${courseStyles.focusIcon} ${selectedCourse === "focus"} focusIcon`} />
+                <p className={`${courseStyles.courseTextP} ${selectedCourse === "focus"} focusText`}>Focus</p>
               </div>
             </li>
             <img
@@ -240,8 +236,8 @@ const Courses = () => {
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("realTimeStrategy")}
               >
-                <HandIcon className={courseStyles.realTimeIconMobile} />
-                <p>
+                <HandIcon className={`${courseStyles.realTimeIcon} ${selectedCourse === "realTimeStrategy"} realTimeIcon`} />
+                <p className={`${courseStyles.courseTextP} ${selectedCourse === "realTimeStrategy"} realTimeText`}>
                   Real Time
                   <br />
                   Strategy

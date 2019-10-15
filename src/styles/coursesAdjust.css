@@ -1,3 +1,24 @@
-.missionIcon .mission {
-	fill: red;
+/* Hover & Active Styles */
+
+.missionIcon.true, .focusIcon.true, .realTimeIcon.true {
+	fill: black;
+	opacity: 1;
+}
+
+.missionIcon:hover, .missionIcon:focus, .missionText:hover, .missionText:focus, .focusIcon:hover, .focusIcon:focus, .focusText:hover, .focusText:focus, .realTimeIcon:hover, .realTimeIcon:focus {
+	opacity: 0.9;
+}
+
+.focusIcon:hover, .missionIcon:hover, .realTimeIcon:hover {
+	transform: scale(1.1);
+	transition: .5s ease;
+}
+
+.focusIcon, .missionIcon, .realTimeIcon {
+	transition: .5s ease;
+}
+
+.focusText.true, .missionText.true, .realTimeText.true {
+	color: black;
+	opacity: 1;
 }
