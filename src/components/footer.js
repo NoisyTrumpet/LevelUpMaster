@@ -11,11 +11,11 @@ const Footer = ({ siteTitle }) => {
   return (
     <footer className={footerStyles.footer}>
       <a rel="relativeanchor" href="#hero">
-        <img
-          alt="Directional Pad Up"
-          src={padUP}
-          className={footerStyles.padUP}
-        />
+        <div className={`${footerStyles.upPad} ${footerStyles.directUP}`}>
+              <span
+                className={`${footerStyles.paddImg} ${footerStyles.padUP}`}
+              ></span>
+            </div>
       </a>
 
       <div className={footerStyles.footMain}>

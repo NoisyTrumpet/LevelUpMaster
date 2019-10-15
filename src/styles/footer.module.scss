@@ -66,8 +66,9 @@
 
 
 .directUP{
-    position: absolute;
-    right: 15%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1.5rem;
 }
 
 .paddImg{
@@ -77,17 +78,12 @@
     background-size: cover;
 }
 
-
-
 .padUP{
-    max-width: 50px;
-    display: block;
-    margin: 0 auto 3rem auto;
-    background: url("/images/padUPHover.svg")
+    background: url("../images/padUp.svg")
 }
 
 .padUP:hover, .padUP:focus{
-    background-image: url("/images/padDownHover.svg");
+    background-image: url("../images/padUPHover.svg");
 }
 
 
@@ -134,8 +130,9 @@
 }
 
 .footerLinks a:active{
-    color: #70f700;
+    color: #ff9400;
 }
+
 
 
 @media (min-width: 1113px) and (max-width: 1366px){
@@ -149,13 +146,6 @@
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(190px, 190px));
 }
-.directUP{
-    right: 10%;
-}
-.paddImg{
-    width: 80px;
-    height: 80px;
-}
 }
 
 @media (min-width: 901px) and (max-width: 1112px){
@@ -163,13 +153,6 @@
     display: flex;
     align-content: center;
     justify-content: space-around;
-}
-.directUP{
-    right: 10%;
-}
-.paddImg{
-    width: 80px;
-    height: 80px;
 }
 }
 
@@ -193,13 +176,6 @@
 }
 .footerLinks a:link {
     line-height: 3rem;
-}
-.directUP{
-    right: 8%;
-}
-.paddImg{
-    width: 80px;
-    height: 80px;
 }
 }
 
@@ -230,15 +206,6 @@
 }
 .footerLinks a:link {
     line-height: 3rem;
-}
-.directUP{
-    position: relative;
-    left: 40%;
-    margin-bottom: 3rem;
-}
-.paddImg{
-    width: 80px;
-    height: 80px;
 }
 }
 
