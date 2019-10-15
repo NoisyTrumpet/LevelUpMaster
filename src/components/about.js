@@ -21,7 +21,7 @@ const About = () => {
             <img src={BodyLine} alt="" />{" "}
           </h2>
           <p>
-            <strong>LevelUP</strong> combines commercial best practices with DoD
+            <span style={{fontWeight:"bold"}}>LevelUP</span> combines commercial best practices with DoD
             resources to code rapidly deployable software solutions. By
             embracing a startup model that replaces bureaucracy with innovation
             and collaboration, we’re pushing boundaries to transform the future
@@ -52,7 +52,7 @@ const About = () => {
                   <img src={BodyLine} alt="" />{" "}
                 </h2>
                 <p>
-                  <strong>LevelUP</strong> combines commercial best practices
+                  <span style={{fontWeight:"bold"}}>LevelUP</span> combines commercial best practices
                   with DoD resources to code rapidly deployable software
                   solutions. By embracing a startup model that replaces
                   bureaucracy with innovation and collaboration, we’re pushing

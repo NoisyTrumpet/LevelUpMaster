@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => {
           maxHeight: 1020,
           maxWidth: 1424,
           width: `100%`,
-          height: `100%`,
+          height: `128%`,
           opacity: 1,
         }}
       />
