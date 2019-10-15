@@ -22,3 +22,7 @@
 	color: black;
 	opacity: 1;
 }
+
+.courseItem .true {
+	transition: .5s ease;
+}

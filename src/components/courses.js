@@ -17,6 +17,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
 
+
 const Courses = () => {
   const [selectedCourse, setSelectedCourse] = useState("mission")
 
@@ -45,6 +46,7 @@ const Courses = () => {
             overflow: "visible",
           }}
         >
+        
           <div
             className={courseStyles.skewCardCourse}
             style={{
@@ -181,6 +183,7 @@ const Courses = () => {
       <div className={courseStyles.mobBackCourses}>
         <div className={courseStyles.mobContCourses}>
           {selectedCourse === "mission" && (
+            <ScrollAnimation animateIn="fadeIn">
             <Fragment>
               <img src={MissionImg} alt="" />
               <p>
@@ -189,9 +192,11 @@ const Courses = () => {
                 Force and DoD missions.
               </p>
             </Fragment>
+            </ScrollAnimation>
           )}
 
           {selectedCourse === "focus" && (
+            <ScrollAnimation animateIn="fadeIn">
             <Fragment>
               <img src={FocusImg} alt="" />
               <p>
@@ -203,9 +208,11 @@ const Courses = () => {
                 Force, U.S. Army, U.S. Navy, U.S. Marines and U.S. Coast Guard.
               </p>
             </Fragment>
+            </ScrollAnimation>
           )}
 
           {selectedCourse === "realTimeStrategy" && (
+            <ScrollAnimation animateIn="fadeIn">
             <Fragment>
               <img src={RealTimeStrategyImg} alt="" />
               <p>
@@ -214,6 +221,7 @@ const Courses = () => {
                 the scale and speed of need.
               </p>
             </Fragment>
+            </ScrollAnimation>
           )}
         </div>
         <div className={courseStyles.mobSectCourses}>
@@ -235,7 +243,7 @@ const Courses = () => {
                     Mission
                   </p>
                 </div>
-
+                <ScrollAnimation animateIn="fadeInUp">
                 <img
                   src={BodyLine}
                   alt=""
@@ -247,6 +255,7 @@ const Courses = () => {
                     margin: "auto",
                   }}
                 />
+                </ScrollAnimation>
               </Col>
               <Col xs="4" sm="4" md="4">
                 <div
@@ -264,7 +273,7 @@ const Courses = () => {
                     Focus
                   </p>
                 </div>
-
+                <ScrollAnimation animateIn="fadeInUp">
                 <img
                   src={BodyLine}
                   alt=""
@@ -276,6 +285,7 @@ const Courses = () => {
                     margin: "auto",
                   }}
                 />
+                </ScrollAnimation>
               </Col>
               <Col xs="4" sm="4" md="4">
                 <div
@@ -296,7 +306,7 @@ const Courses = () => {
                     Strategy
                   </p>
                 </div>
-
+                <ScrollAnimation animateIn="fadeInUp">
                 <img
                   src={BodyLine}
                   alt=""
@@ -308,6 +318,7 @@ const Courses = () => {
                     margin: "auto",
                   }}
                 />
+                </ScrollAnimation>
               </Col>
             </Row>
           </Container>

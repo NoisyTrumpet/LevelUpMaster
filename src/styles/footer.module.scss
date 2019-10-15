@@ -129,12 +129,9 @@
     color: #2e3a74;
 }
 
-.footerLinks a:hover {
-    color: #ff9400;
-}
-
-.footerLinks a:active{
-    color: #70f700;
+.footerLinks a:hover, .footerLinks a:active {
+    color: #2e3a74;
+    text-decoration: underline;
 }
 
 
