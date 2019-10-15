@@ -13,6 +13,9 @@ import HandIcon from "../SVG/realTime.svg"
 
 import courseStyles from "../styles/courses.module.scss"
 import "../styles/coursesAdjust.css"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+import Container from "react-bootstrap/Container"
 
 const Courses = () => {
   const [selectedCourse, setSelectedCourse] = useState("mission")
@@ -59,19 +62,21 @@ const Courses = () => {
             <div className={courseStyles.cardContCourse}>
               {selectedCourse === "mission" && (
                 <p>
-                   <span style={{fontWeight:"bold"}}>LevelUP's</span> directive is to serve as a software
-                  factory to support a full range of Air Force and DoD missions.
+                  <span style={{ fontWeight: "bold" }}>LevelUP's</span>{" "}
+                  directive is to serve as a software factory to support a full
+                  range of Air Force and DoD missions.
                 </p>
               )}
 
               {selectedCourse === "focus" && (
                 <p style={{ fontSize: "22px" }}>
                   Although our initial area of focus supports a range of Air
-                  Force missions, <span style={{fontWeight:"bold"}}>LevelUP</span> will broaden its software development
-                  services to other functional areas. This includes a Unified
-                  Platform that will allow greater operational capabilities
-                  between the U.S. Air Force, U.S. Army, U.S. Navy, U.S. Marines
-                  and U.S. Coast Guard.
+                  Force missions,{" "}
+                  <span style={{ fontWeight: "bold" }}>LevelUP</span> will
+                  broaden its software development services to other functional
+                  areas. This includes a Unified Platform that will allow
+                  greater operational capabilities between the U.S. Air Force,
+                  U.S. Army, U.S. Navy, U.S. Marines and U.S. Coast Guard.
                 </p>
               )}
 
@@ -92,10 +97,12 @@ const Courses = () => {
                   onClick={() => setSelectedCourse("mission")}
                 >
                   <MissionIcon
-                    className={`${courseStyles.missionIcon} ${selectedCourse === "mission"} missionIcon`}
+                    className={`${courseStyles.missionIcon} ${selectedCourse ===
+                      "mission"} missionIcon`}
                   />
                   <p
-                    className={`${courseStyles.courseTextP} ${selectedCourse === "mission"} missionText`}
+                    className={`${courseStyles.courseTextP} ${selectedCourse ===
+                      "mission"} missionText`}
                   >
                     Mission
                   </p>
@@ -115,8 +122,16 @@ const Courses = () => {
                   className={courseStyles.courseItem}
                   onClick={() => setSelectedCourse("focus")}
                 >
-                  <FocusIcon className={`${courseStyles.focusIcon} ${selectedCourse === "focus"} focusIcon`} />
-                  <p className={`${courseStyles.courseTextP} ${selectedCourse === "focus"} focusText`}>Focus</p>
+                  <FocusIcon
+                    className={`${courseStyles.focusIcon} ${selectedCourse ===
+                      "focus"} focusIcon`}
+                  />
+                  <p
+                    className={`${courseStyles.courseTextP} ${selectedCourse ===
+                      "focus"} focusText`}
+                  >
+                    Focus
+                  </p>
                 </div>
                 <ScrollAnimation animateIn="fadeInUp">
                   <img
@@ -133,8 +148,15 @@ const Courses = () => {
                   className={courseStyles.courseItem}
                   onClick={() => setSelectedCourse("realTimeStrategy")}
                 >
-                  <HandIcon className={`${courseStyles.realTimeIcon} ${selectedCourse === "realTimeStrategy"} realTimeIcon`} />
-                  <p className={`${courseStyles.courseTextP} ${selectedCourse === "realTimeStrategy"} realTimeText`}>
+                  <HandIcon
+                    className={`${
+                      courseStyles.realTimeIcon
+                    } ${selectedCourse === "realTimeStrategy"} realTimeIcon`}
+                  />
+                  <p
+                    className={`${courseStyles.courseTextP} ${selectedCourse ===
+                      "realTimeStrategy"} realTimeText`}
+                  >
                     Real Time
                     <br />
                     Strategy
@@ -162,8 +184,9 @@ const Courses = () => {
             <Fragment>
               <img src={MissionImg} alt="" />
               <p>
-                <span style={{fontWeight:"bold"}}>LevelUP's</span> directive is to serve as a software
-                factory to support a full range of Air Force and DoD missions.
+                <span style={{ fontWeight: "bold" }}>LevelUP's</span> directive
+                is to serve as a software factory to support a full range of Air
+                Force and DoD missions.
               </p>
             </Fragment>
           )}
@@ -173,9 +196,10 @@ const Courses = () => {
               <img src={FocusImg} alt="" />
               <p>
                 Although our initial area of focus supports a range of Air Force
-                missions, <span style={{fontWeight:"bold"}}>LevelUP</span> will broaden its software development services
-                to other functional areas. This includes a Unified Platform that
-                will allow greater operational capabilities between the U.S. Air
+                missions, <span style={{ fontWeight: "bold" }}>LevelUP</span>{" "}
+                will broaden its software development services to other
+                functional areas. This includes a Unified Platform that will
+                allow greater operational capabilities between the U.S. Air
                 Force, U.S. Army, U.S. Navy, U.S. Marines and U.S. Coast Guard.
               </p>
             </Fragment>
@@ -193,66 +217,100 @@ const Courses = () => {
           )}
         </div>
         <div className={courseStyles.mobSectCourses}>
-          <ul class="coursesListItem">
-            <li>
-              <div
-                className={courseStyles.courseItem}
-                onClick={() => setSelectedCourse("mission")}
-              >
-                <MissionIcon className={`${courseStyles.missionIcon} ${selectedCourse === "mission"} missionIcon`} />
-                <p className={`${courseStyles.courseTextP} ${selectedCourse === "mission"} missionText`}>Mission</p>
-              </div>
-            </li>
-            <img
-              src={BodyLine}
-              alt=""
-              className={courseStyles.coursesDivide}
-              style={{
-                opacity: selectedCourse === "mission" && 1,
-              }}
-            />
+          <Container>
+            <Row className="justify=content-md-center">
+              <Col xs="4" sm="4" md="4">
+                <div
+                  className={courseStyles.mobCourseItem}
+                  onClick={() => setSelectedCourse("mission")}
+                >
+                  <MissionIcon
+                    className={`${courseStyles.missionIcon} ${selectedCourse ===
+                      "mission"} missionIcon`}
+                  />
+                  <p
+                    className={`${courseStyles.courseTextP} ${selectedCourse ===
+                      "mission"} missionText`}
+                  >
+                    Mission
+                  </p>
+                </div>
 
-            <li>
-              <div
-                className={courseStyles.courseItem}
-                onClick={() => setSelectedCourse("focus")}
-              >
-                <FocusIcon className={`${courseStyles.focusIcon} ${selectedCourse === "focus"} focusIcon`} />
-                <p className={`${courseStyles.courseTextP} ${selectedCourse === "focus"} focusText`}>Focus</p>
-              </div>
-            </li>
-            <img
-              src={BodyLine}
-              alt=""
-              className={courseStyles.coursesDivide}
-              style={{
-                opacity: selectedCourse === "focus" && 1,
-              }}
-            />
+                <img
+                  src={BodyLine}
+                  alt=""
+                  className={courseStyles.coursesDivide}
+                  style={{
+                    opacity: selectedCourse === "mission" && 1,
+                    maxWidth: "90%",
+                    display: "block",
+                    margin: "auto",
+                  }}
+                />
+              </Col>
+              <Col xs="4" sm="4" md="4">
+                <div
+                  className={courseStyles.mobCourseItem}
+                  onClick={() => setSelectedCourse("focus")}
+                >
+                  <FocusIcon
+                    className={`${courseStyles.focusIcon} ${selectedCourse ===
+                      "focus"} focusIcon`}
+                  />
+                  <p
+                    className={`${courseStyles.courseTextP} ${selectedCourse ===
+                      "focus"} focusText`}
+                  >
+                    Focus
+                  </p>
+                </div>
 
-            <div className={courseStyles.courseSpacer} />
-            <li>
-              <div
-                className={courseStyles.courseItem}
-                onClick={() => setSelectedCourse("realTimeStrategy")}
-              >
-                <HandIcon className={`${courseStyles.realTimeIcon} ${selectedCourse === "realTimeStrategy"} realTimeIcon`} />
-                <p className={`${courseStyles.courseTextP} ${selectedCourse === "realTimeStrategy"} realTimeText`}>
-                  Real Time
-                  <br />
-                  Strategy
-                </p>
-              </div>
-            </li>
-            <img
-              src={BodyLine}
-              alt=""
-              className={courseStyles.coursesDivide}
-              style={{
-                opacity: selectedCourse === "realTimeStrategy" && 1,
-              }}
-            />
-          </ul>
+                <img
+                  src={BodyLine}
+                  alt=""
+                  className={courseStyles.coursesDivide}
+                  style={{
+                    opacity: selectedCourse === "focus" && 1,
+                    maxWidth: "90%",
+                    display: "block",
+                    margin: "auto",
+                  }}
+                />
+              </Col>
+              <Col xs="4" sm="4" md="4">
+                <div
+                  className={courseStyles.mobCourseItem}
+                  onClick={() => setSelectedCourse("realTimeStrategy")}
+                >
+                  <HandIcon
+                    className={`${
+                      courseStyles.realTimeIcon
+                    } ${selectedCourse === "realTimeStrategy"} realTimeIcon`}
+                  />
+                  <p
+                    className={`${courseStyles.courseTextP} ${selectedCourse ===
+                      "realTimeStrategy"} realTimeText`}
+                  >
+                    Real Time
+                    <br />
+                    Strategy
+                  </p>
+                </div>
+
+                <img
+                  src={BodyLine}
+                  alt=""
+                  className={courseStyles.coursesDivide}
+                  style={{
+                    opacity: selectedCourse === "realTimeStrategy" && 1,
+                    maxWidth: "90%",
+                    display: "block",
+                    margin: "auto",
+                  }}
+                />
+              </Col>
+            </Row>
+          </Container>
         </div>
       </div>
     </div>

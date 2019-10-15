@@ -336,6 +336,15 @@
 	.courseSpacer {
 		padding: .2rem;
 	}
+
+	.mobCourseItem {
+		.missionIcon, .focusIcon, .realTimeIcon {
+			max-width: 75%;
+			display: block;
+			margin: 0 auto;
+		}
+		text-align: center;
+	}
 }
 
 @media (min-width: 376px) and (max-width: 750px){
@@ -365,6 +374,8 @@
 		max-width: 300px;
 		margin: -1.5rem auto 2rem auto;
 	}
+
+	
 }
 
 @media (min-width: 751px) and (max-width: 1022px) {
