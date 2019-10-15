@@ -14,8 +14,11 @@ import HandIcon from "../SVG/realTime.svg"
 
 import courseStyles from "../styles/courses.module.scss"
 
+
+
 const Courses = () => {
   const [selectedCourse, setSelectedCourse] = useState("mission")
+
 
   return (
 
@@ -91,10 +94,12 @@ const Courses = () => {
               <div
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("mission")}
-
               >
-                <MissionIcon className={courseStyles.missionIcon} />
-                <p className={courseStyles.courseTextP}>Mission</p>
+              
+                <MissionIcon
+                 className={`${courseStyles.missionIcon} ${selectedCourse}`} />
+                <p 
+                className={`${courseStyles.courseTextP} ${selectedCourse}`}>Mission</p>
               </div>
               <ScrollAnimation animateIn="fadeInUp">
                 <img

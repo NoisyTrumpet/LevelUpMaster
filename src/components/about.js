@@ -9,8 +9,8 @@ import ScrollAnimation from "react-animate-on-scroll"
 
 const About = () => {
   return (
-    <div id="about" className={aboutStyles.aboutMain}>
-      <h2 className={aboutStyles.aboutSect}>About</h2>
+    <div  className={aboutStyles.aboutMain}>
+      <h2 id="about" className={aboutStyles.aboutSect}>About</h2>
       <div className={aboutStyles.mobBack}>
         <div className={aboutStyles.mobCont}>
           <h2 className={aboutStyles.cardSubTitle}>
