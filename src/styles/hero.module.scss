@@ -352,3 +352,26 @@
         margin: 0 auto;
     }
 }
+
+// 800 x 600 view
+
+@media (width: 800px) {
+    .dwnPad {
+        position: absolute;
+        top: 120% !important;
+    }
+}
+
+//iPad Pro vertical view
+
+@media (width: 834px) {
+    .dwnPad {
+        top: 67%;
+    }
+}
+
+@media (width: 1366px) {
+    .heroBanner {
+        height: 128% !important;
+    }
+}
