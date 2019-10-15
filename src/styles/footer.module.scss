@@ -226,7 +226,7 @@
     padding-bottom: 3rem;
 }
 .footerLinks li {
-    text-align: left;
+    text-align: center;
 }
 .footerLinks a:link {
     line-height: 3rem;
@@ -254,7 +254,8 @@
 .footerLinks {
     margin: 1rem auto 0 auto;
     max-width: 350px;
-    padding-left: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 .footerLinks1 {
     display: block;
@@ -267,7 +268,7 @@
     padding-bottom: 3rem;
 }
 .footerLinks li {
-    text-align: left;
+    text-align: center;
 }
 .footerLinks a:link {
     line-height: 3rem;

@@ -60,7 +60,7 @@ const Courses = () => {
             <div className={courseStyles.cardContCourse}>
               {selectedCourse === "mission" && (
                 <p>
-                  <strong>LevelUP’s</strong> directive is to serve as a software
+                  <span style={{fontWeight:"bold"}}>LevelUP's</span> directive is to serve as a software
                   factory to support a full range of Air Force and DoD missions.
                 </p>
               )}
@@ -68,7 +68,7 @@ const Courses = () => {
               {selectedCourse === "focus" && (
                 <p style={{ fontSize: "22px" }}>
                   Although our initial area of focus supports a range of Air
-                  Force missions, LevelUP will broaden its software development
+                  Force missions, <span style={{fontWeight:"bold"}}>LevelUP</span> will broaden its software development
                   services to other functional areas. This includes a Unified
                   Platform that will allow greater operational capabilities
                   between the U.S. Air Force, U.S. Army, U.S. Navy, U.S. Marines
@@ -125,7 +125,6 @@ const Courses = () => {
                 />
               </ScrollAnimation>
 
-              <div className={courseStyles.courseSpacer} />
               <div
                 className={courseStyles.courseItem}
                 onClick={() => setSelectedCourse("realTimeStrategy")}
@@ -161,7 +160,7 @@ const Courses = () => {
             <Fragment>
               <img src={MissionImg} alt="" />
               <p>
-                <strong>LevelUP’s</strong> directive is to serve as a software
+                <span style={{fontWeight:"bold"}}>LevelUP's</span> directive is to serve as a software
                 factory to support a full range of Air Force and DoD missions.
               </p>
             </Fragment>
@@ -172,7 +171,7 @@ const Courses = () => {
               <img src={FocusImg} alt="" />
               <p>
                 Although our initial area of focus supports a range of Air Force
-                missions, LevelUP will broaden its software development services
+                missions, <span style={{fontWeight:"bold"}}>LevelUP</span> will broaden its software development services
                 to other functional areas. This includes a Unified Platform that
                 will allow greater operational capabilities between the U.S. Air
                 Force, U.S. Army, U.S. Navy, U.S. Marines and U.S. Coast Guard.

@@ -30,13 +30,14 @@
 	opacity: .6;
 }
 
-
+.missionIcon:hover, .missionIcon:focus, .missionIcon:active,
+.focusIcon:hover, .focusIcon:focus, .focusIcon:active,
 .realTimeIcon:hover, .realTimeIcon:focus, .realTimeIcon:active {
 	opacity: 1;
 	transition: .5 ease;
 }
 
-.realTimeIconMobile {
+.missionIconMobile, .focusIconMobile, .realTimeIconMobile {
 	width: 70px;
 	margin: auto 2rem;
 }
@@ -108,7 +109,7 @@
 	align-items: center;
     justify-content: space-between;
     color: #5c6061;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 	transition: 0.5s;
 }
 
@@ -118,7 +119,7 @@
 	max-width: 330px;
 	width: 100%;
 	height: auto;
-	margin: -2.5rem auto 3rem 1rem;
+	margin: -2.5rem auto 2.5rem 1rem;
 	opacity: 0;
 }
 
@@ -187,7 +188,7 @@
 	left: 10px;
 }
 .courses {
-	padding: 4.5rem 0 2.5rem 0;
+	padding: 3rem 0 2.5rem 0;
 }
 .cardContCourse {
 	transform: skewX(.10rad);
@@ -240,7 +241,7 @@
 	left: 8px;
 }
 .courses {
-	padding: 3.5rem 0 2.5rem 0;
+	padding: 2rem 0 2.5rem 0;
 }
 .cardContCourse {
 	transform: skewX(.10rad);

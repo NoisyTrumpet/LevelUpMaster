@@ -250,9 +250,9 @@
     .heroDes {
         text-align: left;
         max-width: 320px;
-        font-size: 18px;
+        font-size: 20px;
         margin-left: -.1rem;
-        max-width: 65%;
+        max-width: 60%;
     }
 
     .gradient {
@@ -281,6 +281,13 @@
 @media (max-width: 375px) {
     .heroDivide {
         max-width: 270px;
+    }
+    .heroDes {
+        text-align: left !important;
+        max-width: 320px;
+        font-size: 18px;
+        margin-left: -.1rem;
+        max-width: 62%;
     }
 }
 
@@ -324,7 +331,7 @@
         max-width: 320px;
         font-size: 18px;
         margin-left: -.1rem;
-        max-width: 75%;
+        max-width: 72%;
     }
 
     .gradient {
