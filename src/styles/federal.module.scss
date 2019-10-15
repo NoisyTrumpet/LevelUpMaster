@@ -72,11 +72,16 @@
 	margin: auto;
 }
 
+@media (min-width: 1023px) and (max-width: 1112px){
+	.federal {
+		margin: 2rem auto;
+	}
+}
 
 @media (min-width: 751px) and (max-width: 1022px) {
 
 	.federal {
-		margin: 6rem auto;
+		margin: 3.5rem auto;
 	}
 
 	.federalMain {
@@ -110,6 +115,9 @@
 }
 
 @media (min-width: 376px) and (max-width: 750px){
+	.federal {
+		margin: 0 auto 2rem auto;
+	}
 .federalMain{
 	transform: skewX(-.10rad);
 	width: 80vw;
