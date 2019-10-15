@@ -157,7 +157,7 @@ const Courses = () => {
                     className={`${courseStyles.courseTextP} ${selectedCourse ===
                       "realTimeStrategy"} realTimeText`}
                   >
-                    Real Time
+                    Real-Time
                     <br />
                     Strategy
                   </p>
@@ -300,7 +300,7 @@ const Courses = () => {
                     className={`${courseStyles.courseTextP} ${selectedCourse ===
                       "realTimeStrategy"} realTimeText`}
                   >
-                    Real Time
+                    Real-Time
                     <br />
                     Strategy
                   </p>
