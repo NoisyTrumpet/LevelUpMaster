@@ -444,4 +444,23 @@
     }
 }
 
+//iPad mini vertical view
 
+@media (width: 768px) {
+    .aboutMain {
+        padding-top: 80px;
+    }
+
+    .aboutSect {
+        margin-top: 10rem;
+    }
+}
+
+//iPad Pro vertical view
+
+@media (width: 834px) {
+    .aboutMain {
+        padding-top: 90px;
+        margin-top: 8rem;
+    }
+}
