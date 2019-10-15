@@ -19,6 +19,12 @@
     width: 600px;
 }
 
+.downPadWrapper{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
 .heroTitle {
     text-align: center;
     font-family: "Ready Player One";
@@ -246,7 +252,7 @@
         max-width: 320px;
         font-size: 18px;
         margin-left: -.1rem;
-        max-width: 75%;
+        max-width: 65%;
     }
 
     .gradient {

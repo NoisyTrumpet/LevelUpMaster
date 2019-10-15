@@ -58,15 +58,17 @@ const Header = ({ siteTitle }) => {
             development outfit in San Antonio, Texas.
           </h1>
         </ScrollAnimation>
-        <a rel="relativeanchor" href="#about">
-          <div className={heroStyles.dwnPad}>
-            <span
-              className={`${heroStyles.padImg} ${heroStyles.padDwn}`}
-            ></span>
-          </div>
-        </a>
-      </div>
 
+      </div>
+      <div className={heroStyles.downPadWrapper}>
+          <a rel="relativeanchor" href="#about">
+            <div className={heroStyles.dwnPad}>
+              <span
+                className={`${heroStyles.padImg} ${heroStyles.padDwn}`}
+              ></span>
+            </div>
+          </a>
+        </div>
     </div>
   )
 }
