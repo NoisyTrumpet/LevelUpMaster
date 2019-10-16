@@ -3,9 +3,15 @@
     margin: 5rem auto;
     text-align: center;
 
+    display: -ms-grid;
+
     display: grid;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .federalMain {
@@ -13,9 +19,14 @@
     margin-top: 1rem;
     font-family: "azo-sans-web";
 
-    transform: skewX(-.15rad);
+    -webkit-transform: skewX(-.15rad);
+
+        -ms-transform: skewX(-.15rad);
+
+            transform: skewX(-.15rad);
     background: #fff;
-    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.4);
     width: 900px;
     height: 500px;
     margin: auto;
@@ -24,7 +35,9 @@
 }
 
 .federalback {
-    transform: skewX(.15rad);
+    -webkit-transform: skewX(.15rad);
+        -ms-transform: skewX(.15rad);
+            transform: skewX(.15rad);
     background-image: url("../images/LevelUP11.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -56,24 +69,32 @@
 }
 
 .fedButton button {
-    transform: skewX(-.15rad);
+    -webkit-transform: skewX(-.15rad);
+        -ms-transform: skewX(-.15rad);
+            transform: skewX(-.15rad);
     width: 350px;
     height: 80px;
     margin: .5rem auto 0 auto;
     border-width: 0;
     background: #2c65ac;
-    box-shadow: 0px 5px 20px -2px rgba(121, 211, 255, 0.25);
+    -webkit-box-shadow: 0px 5px 20px -2px rgba(121, 211, 255, 0.25);
+            box-shadow: 0px 5px 20px -2px rgba(121, 211, 255, 0.25);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
 }
 
 .fedButton button:hover {
-    box-shadow: 0px 5px 20px -2px rgba(121, 211, 255, 0.75);
+    -webkit-box-shadow: 0px 5px 20px -2px rgba(121, 211, 255, 0.75);
+            box-shadow: 0px 5px 20px -2px rgba(121, 211, 255, 0.75);
     text-shadow: 1px 2px 2px #2e3a74;
 }
 
 .fedButton h4 {
-    transform: skewX(.15rad);
+    -webkit-transform: skewX(.15rad);
+        -ms-transform: skewX(.15rad);
+            transform: skewX(.15rad);
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
@@ -88,7 +109,9 @@
     }
 
     .federalMain {
-        transform: skewX(-.10rad);
+        -webkit-transform: skewX(-.10rad);
+            -ms-transform: skewX(-.10rad);
+                transform: skewX(-.10rad);
         width: 80vw;
     }
 
@@ -99,7 +122,9 @@
     }
 
     .federalback {
-        transform: skewX(.10rad);
+        -webkit-transform: skewX(.10rad);
+            -ms-transform: skewX(.10rad);
+                transform: skewX(.10rad);
         background-size: 115%;
         width: 120%;
         right: 60px;
@@ -119,7 +144,9 @@
 
 @media (min-width: 376px) and (max-width: 750px) {
     .federalMain {
-        transform: skewX(-.10rad);
+        -webkit-transform: skewX(-.10rad);
+            -ms-transform: skewX(-.10rad);
+                transform: skewX(-.10rad);
         width: 80vw;
     }
 
@@ -130,7 +157,9 @@
     }
 
     .federalback {
-        transform: skewX(.10rad);
+        -webkit-transform: skewX(.10rad);
+            -ms-transform: skewX(.10rad);
+                transform: skewX(.10rad);
         background-size: 200%;
         width: 130%;
         right: 40px;
@@ -150,7 +179,9 @@
 
 @media (max-width: 375px) {
     .federalMain {
-        transform: skewX(-.05rad);
+        -webkit-transform: skewX(-.05rad);
+            -ms-transform: skewX(-.05rad);
+                transform: skewX(-.05rad);
         width: 90%;
     }
 
@@ -161,7 +192,9 @@
     }
 
     .federalback {
-        transform: skewX(.05rad);
+        -webkit-transform: skewX(.05rad);
+            -ms-transform: skewX(.05rad);
+                transform: skewX(.05rad);
         background-size: 250%;
         width: 130%;
         right: 30px;
@@ -185,7 +218,9 @@
     }
 
     .fedButton button {
-        transform: skewX(-.15rad);
+        -webkit-transform: skewX(-.15rad);
+            -ms-transform: skewX(-.15rad);
+                transform: skewX(-.15rad);
         margin: .5rem auto 0 1rem;
     }
 

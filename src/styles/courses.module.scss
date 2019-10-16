@@ -36,6 +36,8 @@
 
 .realTimeIcon:hover, .realTimeIcon:focus, .realTimeIcon:active {
 	opacity: 1;
+	-webkit-transition: .5 ease;
+	-o-transition: .5 ease;
 	transition: .5 ease;
 }
 
@@ -47,12 +49,14 @@
 
 .skewCardCourse {
 	/*transform: skewX(0rad);*/
-	transform: skewX(-.15rad);
+	-webkit-transform: skewX(-.15rad);
+	    -ms-transform: skewX(-.15rad);
+	        transform: skewX(-.15rad);
 	background: #fff;
-	box-shadow: 3px 3px 30px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 3px 3px 30px rgba(0,0,0,0.4);
+	        box-shadow: 3px 3px 30px rgba(0,0,0,0.4);
 	width: 550px;
 	height: 650px;
-	// margin: auto;
 	z-index: 5;
 	position: relative;
 	right: 50px;
@@ -66,8 +70,11 @@
 
 .skewCardBackCourse {
 	/*transform: skewX(0rad);*/
-	transform: skewX(-.15rad);
-	box-shadow: 3px 3px 30px rgba(0,0,0,0.6);
+	-webkit-transform: skewX(-.15rad);
+	    -ms-transform: skewX(-.15rad);
+	        transform: skewX(-.15rad);
+	-webkit-box-shadow: 3px 3px 30px rgba(0,0,0,0.6);
+	        box-shadow: 3px 3px 30px rgba(0,0,0,0.6);
 	width: 550px;
 	height: 650px;
 	margin: auto;
@@ -81,7 +88,9 @@
 .cardContCourse {
 	display: block;
 	font-family: "azo-sans-web";
-	transform: skewX(.15rad);
+	-webkit-transform: skewX(.15rad);
+	    -ms-transform: skewX(.15rad);
+	        transform: skewX(.15rad);
 	margin: 21rem auto 0 auto;
 	padding: 1rem;
 	max-width: 500px;
@@ -105,19 +114,31 @@
 
 .courseItem {
 	cursor: pointer;
-	transform: skewX(.15rad);
+	-webkit-transform: skewX(.15rad);
+	    -ms-transform: skewX(.15rad);
+	        transform: skewX(.15rad);
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
 	text-align: left;
-	align-items: center;
-    justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: #5c6061;
 	margin-bottom: 2rem;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 
 
 .coursesDivide {
-	transform: skewX(.15rad);
+	-webkit-transform: skewX(.15rad);
+	    -ms-transform: skewX(.15rad);
+	        transform: skewX(.15rad);
 	max-width: 330px;
 	width: 100%;
 	height: auto;
@@ -173,7 +194,9 @@
 	overflow: visible;
 }
 .skewCardCourse {
-	transform: skewX(-.10rad);
+	-webkit-transform: skewX(-.10rad);
+	    -ms-transform: skewX(-.10rad);
+	        transform: skewX(-.10rad);
 	width: 500px;
 	height: 650px;
 	right: 70px;
@@ -183,7 +206,9 @@
 }
 
 .skewCardBackCourse {
-	transform: skewX(-.10rad);
+	-webkit-transform: skewX(-.10rad);
+	    -ms-transform: skewX(-.10rad);
+	        transform: skewX(-.10rad);
 	width: 500px;
 	height: 650px;
 	top: 30px;
@@ -193,14 +218,20 @@
 	padding: 4.5rem 0 2.5rem 0;
 }
 .cardContCourse {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 	margin: 19rem auto 0 auto;
 }
 .courseItem {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 }
 .coursesDivide {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 	max-width: 330px;
 	width: 100%;
 	height: auto;
@@ -226,7 +257,9 @@
 	text-align: center;
 }
 .skewCardCourse {
-	transform: skewX(-.10rad);
+	-webkit-transform: skewX(-.10rad);
+	    -ms-transform: skewX(-.10rad);
+	        transform: skewX(-.10rad);
 	width: 450px;
 	height: 600px;
 	right: 40px;
@@ -236,7 +269,9 @@
 	background-size: 450px;
 }
 .skewCardBackCourse {
-	transform: skewX(-.10rad);
+	-webkit-transform: skewX(-.10rad);
+	    -ms-transform: skewX(-.10rad);
+	        transform: skewX(-.10rad);
 	width: 450px;
 	height: 600px;
 	top: 30px;
@@ -246,14 +281,20 @@
 	padding: 3.5rem 0 2.5rem 0;
 }
 .cardContCourse {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 	margin: 17rem auto 0 auto;
 }
 .courseItem {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 }
 .coursesDivide {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 	max-width: 320px;
 	width: 100%;
 	height: auto;
@@ -294,22 +335,32 @@
 	}
 
 	.mobBackCourses {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		margin-left: 5%;
 	}
 	.mobContCourses {
 		background-color: #fff;
 		width: 70%;
 		margin: auto auto 1rem auto;
-		transform: skewX(-.10rad);
-		box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		-webkit-transform: skewX(-.10rad);
+		    -ms-transform: skewX(-.10rad);
+		        transform: skewX(-.10rad);
+		-webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		        box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 	}
 	.mobContCourses img {
 		margin: 0;
 	}
 	.mobContCourses p{
-		transform: skewX(.10rad);
+		-webkit-transform: skewX(.10rad);
+		    -ms-transform: skewX(.10rad);
+		        transform: skewX(.10rad);
 		font-family: "azo-sans-web";
 		position: relative;
 		max-width: 430px;
@@ -326,10 +377,14 @@
 		list-style-type: none;
 	}
 	.courseItem {
-		transform: skewX(0rad);
+		-webkit-transform: skewX(0rad);
+		    -ms-transform: skewX(0rad);
+		        transform: skewX(0rad);
 	}
 	.coursesDivide {
-		transform: skewX(0rad);
+		-webkit-transform: skewX(0rad);
+		    -ms-transform: skewX(0rad);
+		        transform: skewX(0rad);
 		max-width: 330px;
 		width: 100%;
 		height: auto;
@@ -354,11 +409,16 @@
 		background-color: #fff;
 		width: 83%;
 		margin: auto auto 1rem auto;
-		transform: skewX(-.10rad);
-		box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		-webkit-transform: skewX(-.10rad);
+		    -ms-transform: skewX(-.10rad);
+		        transform: skewX(-.10rad);
+		-webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		        box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 	}
 	.mobContCourses p{
-		transform: skewX(.10rad);
+		-webkit-transform: skewX(.10rad);
+		    -ms-transform: skewX(.10rad);
+		        transform: skewX(.10rad);
 		font-family: "azo-sans-web";
 		position: relative;
 		max-width: 430px;
@@ -396,8 +456,11 @@
 		background-color: #fff;
 		width: 83%;
 		margin: auto auto 1rem auto;
-		transform: skewX(-.05rad);
-		box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		-webkit-transform: skewX(-.05rad);
+		    -ms-transform: skewX(-.05rad);
+		        transform: skewX(-.05rad);
+		-webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		        box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 	}
 
 	.focusTextMobile {
@@ -410,7 +473,9 @@
 	}
 
 	.mobContCourses p{
-		transform: skewX(.05rad);
+		-webkit-transform: skewX(.05rad);
+		    -ms-transform: skewX(.05rad);
+		        transform: skewX(.05rad);
 		font-family: "azo-sans-web";
 		position: relative;
 		max-width: 430px;

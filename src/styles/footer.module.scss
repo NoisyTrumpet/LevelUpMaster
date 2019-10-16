@@ -1,12 +1,17 @@
 .footer {
-	padding: 1rem;
+    padding: 1rem;
     background-color: transparent;
 }
 
 .footMain {
-	display: grid;
-    align-items: center;
-    justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
 
     font-size: .85rem;
@@ -14,14 +19,20 @@
 }
 
 .footSocial {
-	display: grid;
-    align-items: center;
-    justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
 }
 
 .footSocial {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .footSocial a {
     margin: auto;
@@ -31,38 +42,36 @@
   width: 50px;
   height: 50px;
   background-size: cover;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
   transition: .5s ease;
 }
 
 .socialIcon:hover, .socialIcon:focus {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
 }
 
 .faceBook{
     background-image: url("../images/icons/facebook.svg");
 }
-// .faceBook:hover, .faceBook:focus{
-//     background-image: url("../images/icons/facebookHover.svg");
-// }
+
 .instaGram{
     background-image: url("../images/icons/instagram.svg");
 }
-// .instaGram:hover, .instaGram:focus{
-//     background-image: url("../images/icons/instagramHover.svg");
-// }
+
 .twitTer{
     background-image: url("../images/icons/twitter.svg");
 }
-// .twitTer:hover, .twitTer:focus{
-//     background-image: url("../images/icons/twitterHover.svg");
-// }
+
 .linkeDin{
     background-image: url("../images/icons/linkedin.svg");
 }
-// .linkeDin:hover, .linkeDin:focus{
-//     background-image: url("../images/icons/linkedinHover.svg");
-// }
+
 
 
 .directUP{
@@ -96,9 +105,14 @@
 }
 
 .footerLinks1 {
+    display: -ms-grid;
     display: grid;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(50px, 150px));
 
     list-style: none;
@@ -106,9 +120,14 @@
 }
 
 .footerLinks2 {
+    display: -ms-grid;
     display: grid;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(50px, 200px));
 
     list-style: none;
@@ -137,13 +156,21 @@
 
 @media (min-width: 1113px) and (max-width: 1366px){
 .footerLinks1 {
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(50px, 140px));
 }
 .footerLinks2 {
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(190px, 190px));
 }
 .directUP{
@@ -157,9 +184,13 @@
 
 @media (min-width: 901px) and (max-width: 1112px){
 .footerLinks1, .footerLinks2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-content: center;
-    justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .directUP{
     right: 10%;

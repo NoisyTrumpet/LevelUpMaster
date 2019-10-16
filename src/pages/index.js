@@ -10,6 +10,8 @@ import Courses from "../components/courses"
 import Federal from "../components/federal"
 import Contact from "../components/contact"
 
+
+
 const IndexPage = () => {
 	return (
 		<Layout>

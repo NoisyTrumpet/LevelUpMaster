@@ -22,6 +22,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
   </header>
 )
 

@@ -27,9 +27,12 @@
 
 .skewCard {
     /*transform: skewX(0rad);*/
-    transform: skewX(-.15rad);
+    -webkit-transform: skewX(-.15rad);
+        -ms-transform: skewX(-.15rad);
+            transform: skewX(-.15rad);
     background: #fff;
-    box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
     width: 550px;
     height: 650px;
     margin: auto;
@@ -40,8 +43,11 @@
 
 .skewCardBack {
     /*transform: skewX(0rad);*/
-    transform: skewX(-.15rad);
-    box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
+    -webkit-transform: skewX(-.15rad);
+        -ms-transform: skewX(-.15rad);
+            transform: skewX(-.15rad);
+    -webkit-box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
     width: 550px;
     height: 650px;
     margin: auto;
@@ -60,7 +66,9 @@
 
 .cardCont {
     display: block;
-    transform: skewX(.15rad);
+    -webkit-transform: skewX(.15rad);
+        -ms-transform: skewX(.15rad);
+            transform: skewX(.15rad);
     margin: auto;
     padding: 1rem;
     max-width: 500px;
@@ -177,20 +185,26 @@
 
     .skewCard {
         /*transform: skewX(0rad);*/
-        transform: skewX(-.15rad);
+        -webkit-transform: skewX(-.15rad);
+            -ms-transform: skewX(-.15rad);
+                transform: skewX(-.15rad);
         width: 520px;
     }
 
     .skewCardBack {
         /*transform: skewX(0rad);*/
-        transform: skewX(-.15rad);
+        -webkit-transform: skewX(-.15rad);
+            -ms-transform: skewX(-.15rad);
+                transform: skewX(-.15rad);
         width: 520px;
         left: -30px;
         background-size: 205%;
     }
 
     .cardCont {
-        transform: skewX(.15rad);
+        -webkit-transform: skewX(.15rad);
+            -ms-transform: skewX(.15rad);
+                transform: skewX(.15rad);
         max-width: 480px;
         font-size: 1.3rem;
         text-align: left;
@@ -230,19 +244,25 @@
     }
 
     .skewCard {
-        transform: skewX(-.10rad);
+        -webkit-transform: skewX(-.10rad);
+            -ms-transform: skewX(-.10rad);
+                transform: skewX(-.10rad);
         width: 480px;
     }
 
     .skewCardBack {
-        transform: skewX(-.10rad);
+        -webkit-transform: skewX(-.10rad);
+            -ms-transform: skewX(-.10rad);
+                transform: skewX(-.10rad);
         width: 480px;
         left: -30px;
         background-size: 205%;
     }
 
     .cardCont {
-        transform: skewX(.10rad);
+        -webkit-transform: skewX(.10rad);
+            -ms-transform: skewX(.10rad);
+                transform: skewX(.10rad);
         max-width: 480px;
         font-size: 1.3rem;
         text-align: left;
@@ -294,6 +314,8 @@
     }
 
     .mobBack {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
         height: 680px;
@@ -310,7 +332,9 @@
         width: 80%;
         height: 75%;
         margin: auto;
-        transform: skewX(-.10rad);
+        -webkit-transform: skewX(-.10rad);
+            -ms-transform: skewX(-.10rad);
+                transform: skewX(-.10rad);
         vertical-align: middle;
     }
 
@@ -322,7 +346,9 @@
         margin: auto;
         padding: 3rem 5px 0 5px;
         color: #2C65AC;
-        transform: skewX(.10rad);
+        -webkit-transform: skewX(.10rad);
+            -ms-transform: skewX(.10rad);
+                transform: skewX(.10rad);
     }
 
     .cardSubTitle img {
@@ -332,7 +358,9 @@
     }
 
     .mobCont p {
-        transform: skewX(.10rad);
+        -webkit-transform: skewX(.10rad);
+            -ms-transform: skewX(.10rad);
+                transform: skewX(.10rad);
         font-family: "azo-sans-web";
         position: relative;
         max-width: 425px;
@@ -386,16 +414,22 @@
     .mobCont {
         width: 90%;
         height: 80%;
-        transform: skewX(-.05rad);
+        -webkit-transform: skewX(-.05rad);
+            -ms-transform: skewX(-.05rad);
+                transform: skewX(-.05rad);
     }
 
     .cardSubTitle {
         font-size: 2.5rem !important;
-        transform: skewX(.05rad);
+        -webkit-transform: skewX(.05rad);
+            -ms-transform: skewX(.05rad);
+                transform: skewX(.05rad);
     }
 
     .mobCont p {
-        transform: skewX(.05rad);
+        -webkit-transform: skewX(.05rad);
+            -ms-transform: skewX(.05rad);
+                transform: skewX(.05rad);
         font-family: "azo-sans-web";
         position: relative;
         max-width: 430px;
