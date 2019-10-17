@@ -69,7 +69,10 @@
      }
 	.skewCardBackCourse {
 		left: 60% !important;
-		top: 45px;
+		top: 45px !important;
+	}
+	.courseItem {
+		width: 300px !important;
 	}
 }
 
