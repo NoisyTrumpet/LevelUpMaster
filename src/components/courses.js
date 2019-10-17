@@ -35,16 +35,7 @@ const Courses = () => {
       </h2>
 
       <div className={courseStyles.cardSectCourse}>
-        <div
-          style={{
-            display: "grid",
-            alignItems: "center",
-            justifyContent: "center",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 340px))",
-            left: 0,
-            overflow: "visible",
-          }}
-        >
+        <div className={courseStyles.courseDiv}>
           <div
             className={courseStyles.skewCardCourse}
             style={{

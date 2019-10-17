@@ -22,7 +22,22 @@
 	font-family: 'azo-sans-web';
 }
 
-
+.courseDiv {
+	display: -ms-grid;
+	display: grid;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
+	-ms-grid-columns: 1fr (240px 340px);
+	left: 0;
+	overflow: visible;
+}
 
 
 .realTimeIcon, .missionIcon, .focusIcon {
@@ -44,6 +59,17 @@
 .realTimeIconMobile {
 	width: 70px;
 	margin: auto 2rem;
+}
+
+// Internet Explorer Styles
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     .skewCardCourse {
+
+     }
+
+
+	
 }
 
 
