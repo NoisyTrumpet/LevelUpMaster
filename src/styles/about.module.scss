@@ -16,8 +16,10 @@
     -ms-flex-pack: center;
             justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
+
     left: 0;
     overflow: visible;
+    text-align: center;
 }
 
 .aboutSect {
@@ -123,6 +125,7 @@
     position: relative;
     left: 76%;
     top: 26%;
+    text-align: left;
 }
 
 .sideLine img {
