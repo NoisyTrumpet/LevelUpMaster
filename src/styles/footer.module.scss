@@ -21,6 +21,13 @@
 // Internet Explorer Styles
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      /* IE10+ CSS styles go here */
+
+     .logoParent {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 250px;
+     }
      .footMain {
         text-align: center !important;
      }
@@ -29,6 +36,7 @@
         width: 200px !important;
         display: block !important;
         margin: 0 auto !important;
+        text-align: center;
      }
 }
 
