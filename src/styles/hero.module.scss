@@ -12,6 +12,14 @@
     padding: 4rem 1rem;
 }
 
+// Internet Explorer Styles
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     .heroBanner {
+        height: 267%;
+     }
+}
+
 .heroDivide {
     display: block;
     width: 100%;
