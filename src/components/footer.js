@@ -20,7 +20,7 @@ const Footer = ({ siteTitle }) => {
 
       <div className={footerStyles.footMain}>
 
-        <div className{footerStyles.logoParent}>
+        <div className={footerStyles.logoParent}>
         <img className={footerStyles.footLogo} src={Logo} alt="LevelUP Logo" />
         </div>
 
