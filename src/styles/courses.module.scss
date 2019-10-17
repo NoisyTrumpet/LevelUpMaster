@@ -65,11 +65,12 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      /* IE10+ CSS styles go here */
      .skewCardCourse {
-
+		left: 22.5% !important;
      }
-
-
-	
+	.skewCardBackCourse {
+		left: 60% !important;
+		top: 45px;
+	}
 }
 
 
