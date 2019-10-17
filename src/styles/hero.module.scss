@@ -36,6 +36,26 @@
     width: 600px;
 }
 
+
+@media (min-width: 1800px) {
+    .heroCont {
+        margin: 3rem 8rem 8rem 20rem;
+        width: 800px;
+    }
+
+    .heroTitleBig {
+        font-size: 140px !important;
+    }
+
+    .heroTitle {
+        font-size: 80px !important;
+    }
+
+    .heroDes {
+        max-width: 600px;
+    }
+}
+
 .downPadWrapper{
     position: relative;
     display: block;
