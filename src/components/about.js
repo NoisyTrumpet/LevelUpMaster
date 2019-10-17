@@ -32,14 +32,7 @@ const About = () => {
 
       <div className={aboutStyles.cardSect}>
         <div
-          style={{
-            display: "grid",
-            alignItems: "center",
-            justifyContent: "center",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 340px))",
-            left: 0,
-            overflow: "visible",
-          }}
+          className={aboutStyles.aboutDiv}
         >
           <div className={aboutStyles.cards}>
             <div className={aboutStyles.skewCard}>

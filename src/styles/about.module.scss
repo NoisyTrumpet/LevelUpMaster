@@ -6,6 +6,20 @@
 
 }
 
+.aboutDiv {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
+    left: 0;
+    overflow: visible;
+}
+
 .aboutSect {
     padding-top: 4rem;
     font-size: 5.2rem;
