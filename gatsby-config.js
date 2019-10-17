@@ -10,7 +10,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-stylelint`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-analytics`,
