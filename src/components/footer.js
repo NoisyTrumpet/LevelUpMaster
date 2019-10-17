@@ -19,11 +19,7 @@ const Footer = ({ siteTitle }) => {
       </a>
 
       <div className={footerStyles.footMain}>
-
-        <div className={footerStyles.logoParent}>
         <img className={footerStyles.footLogo} src={Logo} alt="LevelUP Logo" />
-        </div>
-
       </div>
       <div style={{ maxWidth: 500, margin: "auto" }}>
         <div className={footerStyles.footSocial}>
@@ -68,7 +64,11 @@ const Footer = ({ siteTitle }) => {
       <div className={footerStyles.footerLinks}>
         <ul className={footerStyles.footerLinks1}>
           <li>
-            <a href="https://www.af.mil/RSS/" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://www.af.mil/RSS/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               RSS
             </a>
           </li>
@@ -82,7 +82,11 @@ const Footer = ({ siteTitle }) => {
             </a>
           </li>
           <li>
-            <a href="https://www.foia.af.mil" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://www.foia.af.mil"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               FOIA
             </a>
           </li>
@@ -96,7 +100,11 @@ const Footer = ({ siteTitle }) => {
             </a>
           </li>
           <li>
-            <a href="https://www.usa.gov" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://www.usa.gov"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               USA.gov
             </a>
           </li>
