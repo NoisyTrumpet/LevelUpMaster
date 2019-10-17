@@ -11,15 +11,28 @@
     display: grid;
     -webkit-box-align: center;
     -ms-flex-align: center;
+            -webkit-align-items: center;
             align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+            -webkit-justify-content: center;
             justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
-
+    -ms-grid-columns: 1fr (240px 340px);
     left: 0;
     overflow: visible;
     text-align: center;
+}
+
+// Internet Explorer Styles
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     .skewCard {
+        right: -20px !important;
+     }
+     .skewCardBack {
+        left: 45% !important ;
+     }
 }
 
 .aboutSect {
