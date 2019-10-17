@@ -44,6 +44,9 @@
         margin: 0 auto !important;
         text-align: center;
      }
+     .footSocial {
+        display: inline-block !important;
+     }
 }
 
 .footSocial {
@@ -56,6 +59,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+        -ms-grid-columns: 1fr (50px 100px);
 }
 
 .footSocial {
