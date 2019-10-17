@@ -17,10 +17,7 @@ const Footer = ({ siteTitle }) => {
           className={footerStyles.padUP}
         />
       </a>
-
-      <div className={footerStyles.footMain}>
         <img className={footerStyles.footLogo} src={Logo} alt="LevelUP Logo" />
-      </div>
       <div style={{ maxWidth: 500, margin: "auto" }}>
         <div className={footerStyles.footSocial}>
           <a
