@@ -19,7 +19,7 @@ const Footer = ({ siteTitle }) => {
       </a>
 
       <div className={footerStyles.footMain}>
-        <img src={Logo} alt="LevelUP Logo" />
+        <img className={footerStyles.footLogo} src={Logo} alt="LevelUP Logo" />
       </div>
       <div style={{ maxWidth: 500, margin: "auto" }}>
         <div className={footerStyles.footSocial}>
