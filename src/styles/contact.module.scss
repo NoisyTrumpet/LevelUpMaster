@@ -5,9 +5,14 @@
 }
 
 .contactMain {
+	display: -ms-grid;
 	display: grid;
-    align-items: top;
-    justify-content: center;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(15%, 30%));
     margin-bottom: 5rem;
     margin-top: 1rem;

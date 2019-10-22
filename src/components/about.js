@@ -9,7 +9,7 @@ import ScrollAnimation from "react-animate-on-scroll"
 
 const About = () => {
   return (
-    <div className={aboutStyles.aboutMain}>
+    <div  className={aboutStyles.aboutMain}>
       <h2 id="about" className={aboutStyles.aboutSect}>About</h2>
       <div className={aboutStyles.mobBack}>
         <div className={aboutStyles.mobCont}>
@@ -21,7 +21,7 @@ const About = () => {
             <img src={BodyLine} alt="" />{" "}
           </h2>
           <p>
-            <strong>LevelUP</strong> combines commercial best practices with DoD
+            <span style={{fontWeight:"bold"}}>LevelUP</span> combines commercial best practices with DoD
             resources to code rapidly deployable software solutions. By
             embracing a startup model that replaces bureaucracy with innovation
             and collaboration, we’re pushing boundaries to transform the future
@@ -32,14 +32,7 @@ const About = () => {
 
       <div className={aboutStyles.cardSect}>
         <div
-          style={{
-            display: "grid",
-            alignItems: "center",
-            justifyContent: "center",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 340px))",
-            left: 0,
-            overflow: "visible",
-          }}
+          className={aboutStyles.aboutDiv}
         >
           <div className={aboutStyles.cards}>
             <div className={aboutStyles.skewCard}>

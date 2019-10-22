@@ -1,9 +1,41 @@
 .aboutMain {
-    padding: 4rem 0 3rem 0;
+    padding: 4rem 0 1rem 0;
     margin: auto;
     position: relative;
     right: 5%;
 
+}
+
+.aboutDiv {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
+    -ms-grid-columns: 1fr (240px 340px);
+    left: 0;
+    overflow: visible;
+    text-align: center;
+}
+
+// Internet Explorer Styles
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     .skewCard {
+        right: -5px !important;
+     }
+     .skewCardBack {
+        left: 45% !important ;
+     }
+     .sideLine {
+        left: 123% !important;
+     }
 }
 
 .aboutSect {
@@ -27,9 +59,12 @@
 
 .skewCard {
     /*transform: skewX(0rad);*/
-    transform: skewX(-.15rad);
+    -webkit-transform: skewX(-.15rad);
+        -ms-transform: skewX(-.15rad);
+            transform: skewX(-.15rad);
     background: #fff;
-    box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
     width: 550px;
     height: 650px;
     margin: auto;
@@ -40,8 +75,11 @@
 
 .skewCardBack {
     /*transform: skewX(0rad);*/
-    transform: skewX(-.15rad);
-    box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
+    -webkit-transform: skewX(-.15rad);
+        -ms-transform: skewX(-.15rad);
+            transform: skewX(-.15rad);
+    -webkit-box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.4);
     width: 550px;
     height: 650px;
     margin: auto;
@@ -60,7 +98,9 @@
 
 .cardCont {
     display: block;
-    transform: skewX(.15rad);
+    -webkit-transform: skewX(.15rad);
+        -ms-transform: skewX(.15rad);
+            transform: skewX(.15rad);
     margin: auto;
     padding: 1rem;
     max-width: 500px;
@@ -101,6 +141,7 @@
     position: relative;
     left: 76%;
     top: 26%;
+    text-align: left;
 }
 
 .sideLine img {
@@ -177,20 +218,26 @@
 
     .skewCard {
         /*transform: skewX(0rad);*/
-        transform: skewX(-.15rad);
+        -webkit-transform: skewX(-.15rad);
+            -ms-transform: skewX(-.15rad);
+                transform: skewX(-.15rad);
         width: 520px;
     }
 
     .skewCardBack {
         /*transform: skewX(0rad);*/
-        transform: skewX(-.15rad);
+        -webkit-transform: skewX(-.15rad);
+            -ms-transform: skewX(-.15rad);
+                transform: skewX(-.15rad);
         width: 520px;
         left: -30px;
         background-size: 205%;
     }
 
     .cardCont {
-        transform: skewX(.15rad);
+        -webkit-transform: skewX(.15rad);
+            -ms-transform: skewX(.15rad);
+                transform: skewX(.15rad);
         max-width: 480px;
         font-size: 1.3rem;
         text-align: left;
@@ -230,19 +277,25 @@
     }
 
     .skewCard {
-        transform: skewX(-.10rad);
+        -webkit-transform: skewX(-.10rad);
+            -ms-transform: skewX(-.10rad);
+                transform: skewX(-.10rad);
         width: 480px;
     }
 
     .skewCardBack {
-        transform: skewX(-.10rad);
+        -webkit-transform: skewX(-.10rad);
+            -ms-transform: skewX(-.10rad);
+                transform: skewX(-.10rad);
         width: 480px;
         left: -30px;
         background-size: 205%;
     }
 
     .cardCont {
-        transform: skewX(.10rad);
+        -webkit-transform: skewX(.10rad);
+            -ms-transform: skewX(.10rad);
+                transform: skewX(.10rad);
         max-width: 480px;
         font-size: 1.3rem;
         text-align: left;
@@ -294,6 +347,8 @@
     }
 
     .mobBack {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
         height: 680px;
@@ -310,7 +365,9 @@
         width: 80%;
         height: 75%;
         margin: auto;
-        transform: skewX(-.10rad);
+        -webkit-transform: skewX(-.10rad);
+            -ms-transform: skewX(-.10rad);
+                transform: skewX(-.10rad);
         vertical-align: middle;
     }
 
@@ -322,7 +379,9 @@
         margin: auto;
         padding: 3rem 5px 0 5px;
         color: #2C65AC;
-        transform: skewX(.10rad);
+        -webkit-transform: skewX(.10rad);
+            -ms-transform: skewX(.10rad);
+                transform: skewX(.10rad);
     }
 
     .cardSubTitle img {
@@ -332,7 +391,9 @@
     }
 
     .mobCont p {
-        transform: skewX(.10rad);
+        -webkit-transform: skewX(.10rad);
+            -ms-transform: skewX(.10rad);
+                transform: skewX(.10rad);
         font-family: "azo-sans-web";
         position: relative;
         max-width: 425px;
@@ -340,7 +401,7 @@
         margin: -15px auto auto auto;
         font-size: 1rem;
         font-weight: 400;
-        padding: 0 15px;
+        padding: 10px 15px;
     }
 
     .bottomSect {
@@ -386,16 +447,22 @@
     .mobCont {
         width: 90%;
         height: 80%;
-        transform: skewX(-.05rad);
+        -webkit-transform: skewX(-.05rad);
+            -ms-transform: skewX(-.05rad);
+                transform: skewX(-.05rad);
     }
 
     .cardSubTitle {
         font-size: 2.5rem !important;
-        transform: skewX(.05rad);
+        -webkit-transform: skewX(.05rad);
+            -ms-transform: skewX(.05rad);
+                transform: skewX(.05rad);
     }
 
     .mobCont p {
-        transform: skewX(.05rad);
+        -webkit-transform: skewX(.05rad);
+            -ms-transform: skewX(.05rad);
+                transform: skewX(.05rad);
         font-family: "azo-sans-web";
         position: relative;
         max-width: 430px;
@@ -403,11 +470,11 @@
         margin: -15px auto auto auto;
         font-size: 1.1rem;
         font-weight: 400;
-        padding: 10px 15px;
+        padding: 0 15px;
     }
 
     .bottomSect {
-        margin: 8rem auto;
+        margin: 5rem auto;
         left: 0;
     }
 
@@ -427,10 +494,11 @@
 }
 
 @media (max-width: 350px){
-    .mobCont {
-        height: 90%;
-    }
-}
+     .mobCont {
+         height: 90%;
+     }
+ }
+
 
 //iPhone 6/7/8 landscape
 
@@ -447,5 +515,26 @@
 @media (width: 812px) {
     .aboutSect {
         margin: 2rem;
+    }
+}
+
+//iPad mini vertical view
+
+@media (width: 768px) {
+    .aboutMain {
+        padding-top: 80px;
+    }
+
+    .aboutSect {
+        margin-top: 10rem;
+    }
+}
+
+//iPad Pro vertical view
+
+@media (width: 834px) {
+    .aboutMain {
+        padding-top: 90px;
+        margin-top: 8rem;
     }
 }

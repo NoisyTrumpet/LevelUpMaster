@@ -10,15 +10,27 @@
 }
 
 .focusIcon:hover, .missionIcon:hover, .realTimeIcon:hover {
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-transition: .5s ease;
+	-o-transition: .5s ease;
 	transition: .5s ease;
 }
 
 .focusIcon, .missionIcon, .realTimeIcon {
+	-webkit-transition: .5s ease;
+	-o-transition: .5s ease;
 	transition: .5s ease;
 }
 
 .focusText.true, .missionText.true, .realTimeText.true {
 	color: black;
 	opacity: 1;
+}
+
+.courseItem .true {
+	-webkit-transition: .5s ease;
+	-o-transition: .5s ease;
+	transition: .5s ease;
 }

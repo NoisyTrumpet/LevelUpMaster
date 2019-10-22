@@ -1,5 +1,5 @@
 .courseMain {
-	padding: 0 0 5rem 0;
+	padding: 0 0 5.5rem 0;
 	margin: auto;
 	position: relative;
 	right: 5%;
@@ -22,7 +22,22 @@
 	font-family: 'azo-sans-web';
 }
 
-
+.courseDiv {
+	display: -ms-grid;
+	display: grid;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
+	-ms-grid-columns: 1fr (240px 340px);
+	left: 0;
+	overflow: visible;
+}
 
 
 .realTimeIcon, .missionIcon, .focusIcon {
@@ -36,6 +51,8 @@
 
 .realTimeIcon:hover, .realTimeIcon:focus, .realTimeIcon:active {
 	opacity: 1;
+	-webkit-transition: .5 ease;
+	-o-transition: .5 ease;
 	transition: .5 ease;
 }
 
@@ -44,15 +61,32 @@
 	margin: auto 2rem;
 }
 
+// Internet Explorer Styles
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     .skewCardCourse {
+		left: 22.5% !important;
+     }
+	.skewCardBackCourse {
+		left: 60% !important;
+		top: 45px !important;
+	}
+	.courseItem, .courseItem p {
+		width: 300px !important;
+	}
+}
+
 
 .skewCardCourse {
 	/*transform: skewX(0rad);*/
-	transform: skewX(-.15rad);
+	-webkit-transform: skewX(-.15rad);
+	    -ms-transform: skewX(-.15rad);
+	        transform: skewX(-.15rad);
 	background: #fff;
-	box-shadow: 3px 3px 30px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 3px 3px 30px rgba(0,0,0,0.4);
+	        box-shadow: 3px 3px 30px rgba(0,0,0,0.4);
 	width: 550px;
 	height: 650px;
-	// margin: auto;
 	z-index: 5;
 	position: relative;
 	right: 50px;
@@ -66,8 +100,11 @@
 
 .skewCardBackCourse {
 	/*transform: skewX(0rad);*/
-	transform: skewX(-.15rad);
-	box-shadow: 3px 3px 30px rgba(0,0,0,0.6);
+	-webkit-transform: skewX(-.15rad);
+	    -ms-transform: skewX(-.15rad);
+	        transform: skewX(-.15rad);
+	-webkit-box-shadow: 3px 3px 30px rgba(0,0,0,0.6);
+	        box-shadow: 3px 3px 30px rgba(0,0,0,0.6);
 	width: 550px;
 	height: 650px;
 	margin: auto;
@@ -81,7 +118,9 @@
 .cardContCourse {
 	display: block;
 	font-family: "azo-sans-web";
-	transform: skewX(.15rad);
+	-webkit-transform: skewX(.15rad);
+	    -ms-transform: skewX(.15rad);
+	        transform: skewX(.15rad);
 	margin: 21rem auto 0 auto;
 	padding: 1rem;
 	max-width: 500px;
@@ -105,19 +144,31 @@
 
 .courseItem {
 	cursor: pointer;
-	transform: skewX(.15rad);
+	-webkit-transform: skewX(.15rad);
+	    -ms-transform: skewX(.15rad);
+	        transform: skewX(.15rad);
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
 	text-align: left;
-	align-items: center;
-    justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: #5c6061;
 	margin-bottom: 2rem;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 
 
 .coursesDivide {
-	transform: skewX(.15rad);
+	-webkit-transform: skewX(.15rad);
+	    -ms-transform: skewX(.15rad);
+	        transform: skewX(.15rad);
 	max-width: 330px;
 	width: 100%;
 	height: auto;
@@ -160,7 +211,7 @@
 
 @media (min-width: 1112px) and (max-width: 1245px){
 .courseMain {
-	padding: 0 0 5rem 0;
+	padding: 0 0 5.5rem 0;
 	right: 6%;
 }
 .coursesSect {
@@ -173,7 +224,9 @@
 	overflow: visible;
 }
 .skewCardCourse {
-	transform: skewX(-.10rad);
+	-webkit-transform: skewX(-.10rad);
+	    -ms-transform: skewX(-.10rad);
+	        transform: skewX(-.10rad);
 	width: 500px;
 	height: 650px;
 	right: 70px;
@@ -183,7 +236,9 @@
 }
 
 .skewCardBackCourse {
-	transform: skewX(-.10rad);
+	-webkit-transform: skewX(-.10rad);
+	    -ms-transform: skewX(-.10rad);
+	        transform: skewX(-.10rad);
 	width: 500px;
 	height: 650px;
 	top: 30px;
@@ -193,14 +248,20 @@
 	padding: 4.5rem 0 2.5rem 0;
 }
 .cardContCourse {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 	margin: 19rem auto 0 auto;
 }
 .courseItem {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 }
 .coursesDivide {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 	max-width: 330px;
 	width: 100%;
 	height: auto;
@@ -218,7 +279,7 @@
 
 @media (min-width: 1024px) and (max-width: 1111px){
 .courseMain {
-	padding: 0 0 5rem 0;
+	padding: 0 0 5.5rem 0;
 	right: 6%;
 }
 .coursesSect {
@@ -226,7 +287,9 @@
 	text-align: center;
 }
 .skewCardCourse {
-	transform: skewX(-.10rad);
+	-webkit-transform: skewX(-.10rad);
+	    -ms-transform: skewX(-.10rad);
+	        transform: skewX(-.10rad);
 	width: 450px;
 	height: 600px;
 	right: 40px;
@@ -236,7 +299,9 @@
 	background-size: 450px;
 }
 .skewCardBackCourse {
-	transform: skewX(-.10rad);
+	-webkit-transform: skewX(-.10rad);
+	    -ms-transform: skewX(-.10rad);
+	        transform: skewX(-.10rad);
 	width: 450px;
 	height: 600px;
 	top: 30px;
@@ -246,14 +311,20 @@
 	padding: 3.5rem 0 2.5rem 0;
 }
 .cardContCourse {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 	margin: 17rem auto 0 auto;
 }
 .courseItem {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 }
 .coursesDivide {
-	transform: skewX(.10rad);
+	-webkit-transform: skewX(.10rad);
+	    -ms-transform: skewX(.10rad);
+	        transform: skewX(.10rad);
 	max-width: 320px;
 	width: 100%;
 	height: auto;
@@ -275,7 +346,9 @@
 }
 
 @media (max-width: 1023px){
-
+	.focusTextMobile {
+		font-size: 1rem !important;
+	}
 	.coursesSect {
 		left: 2%;
 		top: 0;
@@ -292,22 +365,32 @@
 	}
 
 	.mobBackCourses {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		margin-left: 5%;
 	}
 	.mobContCourses {
 		background-color: #fff;
 		width: 70%;
 		margin: auto auto 1rem auto;
-		transform: skewX(-.10rad);
-		box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		-webkit-transform: skewX(-.10rad);
+		    -ms-transform: skewX(-.10rad);
+		        transform: skewX(-.10rad);
+		-webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		        box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 	}
 	.mobContCourses img {
 		margin: 0;
 	}
 	.mobContCourses p{
-		transform: skewX(.10rad);
+		-webkit-transform: skewX(.10rad);
+		    -ms-transform: skewX(.10rad);
+		        transform: skewX(.10rad);
 		font-family: "azo-sans-web";
 		position: relative;
 		max-width: 430px;
@@ -324,10 +407,14 @@
 		list-style-type: none;
 	}
 	.courseItem {
-		transform: skewX(0rad);
+		-webkit-transform: skewX(0rad);
+		    -ms-transform: skewX(0rad);
+		        transform: skewX(0rad);
 	}
 	.coursesDivide {
-		transform: skewX(0rad);
+		-webkit-transform: skewX(0rad);
+		    -ms-transform: skewX(0rad);
+		        transform: skewX(0rad);
 		max-width: 330px;
 		width: 100%;
 		height: auto;
@@ -352,11 +439,16 @@
 		background-color: #fff;
 		width: 83%;
 		margin: auto auto 1rem auto;
-		transform: skewX(-.10rad);
-		box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		-webkit-transform: skewX(-.10rad);
+		    -ms-transform: skewX(-.10rad);
+		        transform: skewX(-.10rad);
+		-webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		        box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 	}
 	.mobContCourses p{
-		transform: skewX(.10rad);
+		-webkit-transform: skewX(.10rad);
+		    -ms-transform: skewX(.10rad);
+		        transform: skewX(.10rad);
 		font-family: "azo-sans-web";
 		position: relative;
 		max-width: 430px;
@@ -394,8 +486,15 @@
 		background-color: #fff;
 		width: 83%;
 		margin: auto auto 1rem auto;
-		transform: skewX(-.05rad);
-		box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		-webkit-transform: skewX(-.05rad);
+		    -ms-transform: skewX(-.05rad);
+		        transform: skewX(-.05rad);
+		-webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+		        box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+	}
+
+	.focusTextMobile {
+		font-size: 0.8rem !important;
 	}
 
 	.coursesSect {
@@ -404,7 +503,9 @@
 	}
 
 	.mobContCourses p{
-		transform: skewX(.05rad);
+		-webkit-transform: skewX(.05rad);
+		    -ms-transform: skewX(.05rad);
+		        transform: skewX(.05rad);
 		font-family: "azo-sans-web";
 		position: relative;
 		max-width: 430px;

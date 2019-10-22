@@ -14,9 +14,9 @@ const Federal = () => {
             </h3>
 
             <p>
-              Want to collaborate with <strong>LevelUP</strong> or the USAF?
+              Want to collaborate with <strong>LevelUP</strong>?
               <br />
-              Check out our federal bussiness opportunities.
+              Check out our federal business opportunities.
             </p>
 
             <div className={fedStyles.fedButton}>

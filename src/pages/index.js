@@ -1,3 +1,7 @@
+import 'core-js'
+import 'core-js/es6/map'
+import 'core-js/es6/set'
+import 'raf/polyfill'
 import React from "react"
 
 import Layout from "../components/layout"
@@ -9,6 +13,10 @@ import About from "../components/about"
 import Courses from "../components/courses"
 import Federal from "../components/federal"
 import Contact from "../components/contact"
+import ScrollUpButton from "react-scroll-up-button"
+
+
+
 
 const IndexPage = () => {
 	return (
@@ -20,6 +28,7 @@ const IndexPage = () => {
 			<Courses />
 			<Federal />
 			<Contact />
+			<ScrollUpButton />
 		</Layout>
 	)
 }
