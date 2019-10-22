@@ -116,7 +116,9 @@ class ScrollUpButton extends React.Component {
   render() {
     const styles = {
       MainStyle: {
-        backgroundColor: 'rgba(50, 50, 50, 0)',
+        backgroundColor: 'rgba(255, 255, 255, 0.4)',
+        borderRadius: 12,
+        padding: 2,
         height: 50,
         position: 'fixed',
         bottom: 20,
