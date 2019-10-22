@@ -1,7 +1,3 @@
-import 'core-js'
-import 'core-js/es6/map'
-import 'core-js/es6/set'
-import 'raf/polyfill'
 import React from "react"
 
 import Layout from "../components/layout"
@@ -14,7 +10,8 @@ import Courses from "../components/courses"
 import Federal from "../components/federal"
 import Contact from "../components/contact"
 import ScrollUpButton from "react-scroll-up-button"
-
+// import defaultStyles from "../styles/default.module.scss"
+import UpButton from "../components/upButton"
 
 
 
@@ -28,7 +25,7 @@ const IndexPage = () => {
 			<Courses />
 			<Federal />
 			<Contact />
-			<ScrollUpButton />
+			<UpButton/>
 		</Layout>
 	)
 }

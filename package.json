@@ -8,6 +8,7 @@
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
+    "detect-passive-events": "^1.0.4",
     "gatsby": "^2.15.34",
     "gatsby-cli": "^2.8.1",
     "gatsby-image": "^2.0.34",
@@ -37,7 +38,8 @@
     "react-tabs": "^3.0.0",
     "reactstrap": "^8.0.1",
     "sharp": "^0.22.0",
-    "smooth-scroll": "^16.1.0"
+    "smooth-scroll": "^16.1.0",
+    "tween-functions": "^1.2.0"
   },
   "devDependencies": {
     "eslint-config-react-app": "^5.0.2",

@@ -1,0 +1,21 @@
+.upButton {
+    position: fixed;
+    right: 20px;
+    bottom: 125px;
+    transition: right 0.5s;
+    cursor: pointer;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.upButtonContainer {
+	position: fixed;
+    right: -200px;
+    bottom: 125px;
+    transition: right 0.5s;
+    cursor: pointer;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+}
