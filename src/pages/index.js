@@ -13,6 +13,8 @@ import About from "../components/about"
 import Courses from "../components/courses"
 import Federal from "../components/federal"
 import Contact from "../components/contact"
+import ScrollUpButton from "react-scroll-up-button"
+
 
 
 
@@ -26,6 +28,7 @@ const IndexPage = () => {
 			<Courses />
 			<Federal />
 			<Contact />
+			<ScrollUpButton />
 		</Layout>
 	)
 }

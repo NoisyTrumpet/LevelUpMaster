@@ -3,6 +3,28 @@
     background-color: transparent;
 }
 
+.footerLogo {
+    max-width: 200px;
+    display: inline-flex;
+    flex-direction: left;
+}
+
+.footerSocial {
+    float: right;
+    .socialIcon {
+        margin: 1rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .footerLogo {
+        display: block;
+    margin: 0 auto;
+
+    }
+}
+
 .footMain {
     display: -ms-grid;
     display: grid;

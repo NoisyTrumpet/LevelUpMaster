@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => {
         <ScrollAnimation animateIn="fadeInUp">
           <h1 className={heroStyles.heroDes} style={{ color: COLORS.darkGray }}>
             <strong>LevelUP Code Works</strong> is a U.S. Air Force software
-            development outfit in San Antonio, Texas.
+            development organization headquartered in San Antonio, Texas.
           </h1>
         </ScrollAnimation>
 
