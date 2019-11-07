@@ -30,7 +30,9 @@ const Courses = () => {
           Be
         </span>{" "}
         Bold<span className={courseStyles.azoSans}>,</span><span className={courseStyles.spacer} style={{ width: "3rem", height: "auto", marginRight: "12rem"}}> </span> Act
-        <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}>Now</span>
+        <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}> Now</span>
+        <br/>
+        Learn and Adapt
       </h2>
 
       <div className={courseStyles.cardSectCourse}>
