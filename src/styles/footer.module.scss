@@ -10,77 +10,73 @@
     margin-left: 1rem;
 }
 
-
 .footerSocial {
     float: right;
+
     .socialIcon {
         margin: 1rem;
     }
 }
 
 .socialIcon {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
-}
-
-.socialIcon:hover, .socialIcon:focus {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
     -webkit-transition: .5s ease;
     -o-transition: .5s ease;
     transition: .5s ease;
 }
 
-.faceBook{
+.socialIcon:hover,
+.socialIcon:focus {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.faceBook {
     background-image: url("../images/icons/facebook.svg");
 }
 
-.instaGram{
+.instaGram {
     background-image: url("../images/icons/instagram.svg");
 }
 
-.twitTer{
+.twitTer {
     background-image: url("../images/icons/twitter.svg");
 }
 
-.linkeDin{
+.linkeDin {
     background-image: url("../images/icons/linkedin.svg");
 }
 
-
-
-.directUP{
+.directUP {
     position: absolute;
     right: 15%;
 }
 
-.paddImg{
+.paddImg {
     display: inline-block;
     width: 80px;
     height: 80px;
     background-size: cover;
 }
 
-
-
-.padUP{
+.padUP {
     max-width: 50px;
     display: block;
     margin: 0 auto 3rem auto;
     background: url("/images/padUPHover.svg")
 }
 
-.padUP:hover, .padUP:focus{
+.padUP:hover,
+.padUP:focus {
     background-image: url("/images/padDownHover.svg");
 }
-
-
 
 .footerLinks {
     font-size: .8rem;
@@ -101,124 +97,144 @@
     color: #2e3a74;
 }
 
-.footerLinks a:hover, .footerLinks a:active {
+.footerLinks a:hover,
+.footerLinks a:active {
     color: #2e3a74;
     text-decoration: underline;
 }
 
-
-
-
 // Internet Explorer Styles
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-     /* IE10+ CSS styles go here */
-     .footMain {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+    /* IE10+ CSS styles go here */
+    .footMain {
         text-align: center !important;
-     }
-     .footLogo {
+    }
+
+    .footLogo {
         max-width: 240px !important;
         width: 200px !important;
         display: block !important;
         margin: 0 auto !important;
         text-align: center;
-     }
-     .footSocial {
+    }
+
+    .footSocial {
         display: inline-block !important;
         margin-top: 2rem;
-     }
+    }
 
-     .socialIcon {
+    .socialIcon {
         margin: 2rem;
-     }
+    }
 
-     .footerLinks1, .footerLinks2 {
+    .footerLinks1,
+    .footerLinks2 {
         display: inline-flex !important;
-     }
-}
-
-
-@media (min-width: 1113px) and (max-width: 1366px){
-.directUP{
-    right: 10%;
-}
-.paddImg{
-    width: 80px;
-    height: 80px;
-}
-}
-
-@media (min-width: 901px) and (max-width: 1112px){
-.directUP{
-    right: 10%;
-}
-.paddImg{
-    width: 80px;
-    height: 80px;
-}
-}
-
-@media (min-width: 751px) and (max-width: 900px){
-.directUP{
-    right: 8%;
-}
-.paddImg{
-    width: 80px;
-    height: 80px;
-}
-}
-
-@media (max-width: 500px) {
-    .footerLogo {
-        display: block;
-    margin: 0 auto;
     }
 }
 
-@media (min-width: 376px) and (max-width: 750px){
-.socialIcon {
-  width: 40px;
-  height: 40px;
-}
-.footerSocial {
-float: none;
-text-align: center;
-}
-.footerLinks {
-    max-width: 80%;
-    margin: auto;
-}
-.directUP{
-    position: relative;
-    left: 40%;
-    margin-bottom: 3rem;
-}
-.paddImg{
-    width: 80px;
-    height: 80px;
-}
+@media (min-width: 1113px) and (max-width: 1366px) {
+    .directUP {
+        right: 10%;
+    }
+
+    .paddImg {
+        width: 80px;
+        height: 80px;
+    }
 }
 
-@media (max-width: 375px){
-.socialIcon {
-  width: 30px;
-  height: 30px;
+@media (min-width: 901px) and (max-width: 1112px) {
+    .directUP {
+        right: 10%;
+    }
+
+    .paddImg {
+        width: 80px;
+        height: 80px;
+    }
 }
-.footerSocial {
-float: none;
-text-align: center;
+
+@media (min-width: 751px) and (max-width: 900px) {
+    .directUP {
+        right: 8%;
+    }
+
+    .paddImg {
+        width: 80px;
+        height: 80px;
+    }
 }
-.footerLinks {
-    max-width: 90%;
-    margin: auto;
+
+@media (max-width: 767px) {
+    .footerLogo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footerSocial {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
 }
+
+@media (min-width: 376px) and (max-width: 750px) {
+    .socialIcon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footerSocial {
+        float: none;
+        text-align: center;
+    }
+
+    .footerLinks {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .directUP {
+        position: relative;
+        left: 40%;
+        margin-bottom: 3rem;
+    }
+
+    .paddImg {
+        width: 80px;
+        height: 80px;
+    }
 }
-@media (max-width: 350px){
-.footerSocial {
-float: none;
-text-align: center;
+
+@media (max-width: 375px) {
+    .socialIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footerSocial {
+        float: none;
+        text-align: center;
+    }
+
+    .footerLinks {
+        max-width: 90%;
+        margin: auto;
+    }
 }
-.footerLinks {
-    max-width: 95%;
-    margin: auto;
-}
+
+@media (max-width: 350px) {
+    .footerSocial {
+        float: none;
+        text-align: center;
+    }
+
+    .footerLinks {
+        max-width: 95%;
+        margin: auto;
+    }
 }

@@ -26,12 +26,13 @@ const Courses = () => {
         className={courseStyles.coursesSect}
         style={{ color: COLORS.levelUpPurple }}
       >
-        Code
         <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}>
-          {" "}
-          for the
+          Be
         </span>{" "}
-        win
+        Bold<span className={courseStyles.azoSans}>,</span> Act
+        <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}> Now</span>
+        <br/>
+        Learn <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue}}>and</span><span className={courseStyles.spacer} style={{ width: "3rem", height: "auto", marginRight: "7rem"}}> </span> <span style={{position:"relative", top: 40}}>Adapt</span>
       </h2>
 
       <div className={courseStyles.cardSectCourse}>
