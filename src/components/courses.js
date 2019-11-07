@@ -32,7 +32,6 @@ const Courses = () => {
         Bold<span className={courseStyles.azoSans}>,</span><span className={courseStyles.spacer} style={{ width: "3rem", height: "auto", marginRight: "12rem"}}> </span> Act
         <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}> Now</span>
         <br/>
-        
       </h2>
 
       <div className={courseStyles.cardSectCourse}>
@@ -316,6 +315,7 @@ const Courses = () => {
         </div>
       </div>
     </div>
+
   )
 }
 
