@@ -43,7 +43,11 @@
 @media (min-width: 749px) and (max-width: 900px) {
     .heroDes {
         max-width: 450px !important;
-        margin: auto auto auto 0 !important;
+        margin: auto auto auto 1rem !important;
+    }
+    .heroDivide {
+        transform: scaleY(-1);
+        margin-left: -2rem;
     }
 }
 
