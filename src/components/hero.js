@@ -4,6 +4,7 @@ import { COLORS } from "../styles/constants"
 import heroImage from "../images/heroBack.png"
 import HeroLine from "../images/heroLine.png"
 import ScrollAnimation from "react-animate-on-scroll"
+import PadDwn from "../SVG/padDown.svg"
 
 // import Jumbotron from 'react-bootstrap/Jumbotron'
 
@@ -39,16 +40,16 @@ const Header = ({ siteTitle }) => {
             className={heroStyles.heroTitle}
             style={{ color: COLORS.levelUpBlue }}
           >
-            Be bold
+            Revolutionizing
             <br />
             <span
               className={heroStyles.heroTitleBig}
               style={{ color: COLORS.levelUpPurple }}
             >
-              Act Now
+              Software <span className={heroStyles.heroTitleSmall}>for</span>
             </span>
             <br />
-            Learn <span className={heroStyles.heroTitleSmall}>and</span> Adapt
+            America<span className={heroStyles.azoSans}>'</span>s Air force
           </h2>
         </ScrollAnimation>
         <img src={HeroLine} className={heroStyles.heroDivide} alt="" />
@@ -58,17 +59,16 @@ const Header = ({ siteTitle }) => {
             development organization headquartered in San Antonio, Texas.
           </h1>
         </ScrollAnimation>
-
       </div>
       <div className={heroStyles.downPadWrapper}>
-          <a rel="relativeanchor" href="#about">
-            <div className={heroStyles.dwnPad}>
-              <span
-                className={`${heroStyles.padImg} ${heroStyles.padDwn}`}
-              ></span>
-            </div>
-          </a>
-        </div>
+        <a rel="relativeanchor" href="#about">
+          <div className={heroStyles.dwnPad}>
+            <span
+              className={`${heroStyles.padImg} ${heroStyles.padDwn}`}
+            ></span>
+          </div>
+        </a>
+      </div>
     </div>
   )
 }
