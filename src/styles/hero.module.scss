@@ -40,6 +40,12 @@
     font-family: azo-sans-web;
 }
 
+@media (min-width: 749px) and (max-width: 900px) {
+    .heroDes {
+        max-width: 430px !important;
+    }
+}
+
 
 @media (min-width: 1800px) {
     .heroCont {
