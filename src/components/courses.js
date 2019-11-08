@@ -29,10 +29,12 @@ const Courses = () => {
         <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}>
           Be
         </span>{" "}
-        Bold<span className={courseStyles.azoSans}>,</span><span className={courseStyles.spacer} style={{ width: "2rem", height: "auto", marginRight: "1rem"}}> </span> <span className={courseStyles.topper}><span clasName={courseStyles.mobileAct}>Act</span>
-        <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}> Now</span></span>
+        Bold<span className={courseStyles.azoSans}>,</span><span className={courseStyles.spacer} style={{ width: "2rem", height: "auto", marginRight: "4rem"}}> </span> <span className={courseStyles.topper}>Act
+        <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}> Now</span> </span>
         <br/>
       </h2>
+
+      <h2 className={courseStyles.mobileHead}><span className={courseStyles.smaller}>Be</span> Bold<span className={courseStyles.azoSans}>,</span> Act <span className={courseStyles.smaller}>Now</span></h2>
 
       <div className={courseStyles.cardSectCourse}>
         <div className={courseStyles.courseDiv}>

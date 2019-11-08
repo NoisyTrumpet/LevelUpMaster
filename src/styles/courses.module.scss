@@ -389,21 +389,41 @@
 .topper {
 	position: relative;
 	top: 1.6rem;
+	left: 1.4rem;
 }
 
+@media (min-width: 1024px) {
+	.mobileHead {
+		display: none;
+	}
+}
 
 @media (max-width: 1023px) {
+	.mobileHead {
+		text-align: center;
+		position: relative;
+		left: 7%;
+		font-family: "Ready Player One";
+		color: rgb(46, 58, 116);
+	}
+
+	.smaller {
+		font-size: 1.5rem !important;
+		color: rgb(44, 101, 172);
+	}
+
+
+
+
 
 
 	.topper {
 		top: 0;
-
 	}
 
     .spacer {
         display: none;
     }
-
 
     .focusTextMobile {
         font-size: 1rem !important;
@@ -414,11 +434,16 @@
         top: 0;
         margin: 1rem auto;
         font-size: 2rem;
+        display: none !important;
     }
 
     .coursesSect span {
         font-size: 1rem !important;
     }
+
+    .mobileAct {
+		font-size: 2.5rem !important;
+	}
 
     .cardSectCourse {
         display: none;
@@ -504,6 +529,7 @@
 
         text-align: center;
     }
+
 }
 
 @media (min-width: 376px) and (max-width: 750px) {
