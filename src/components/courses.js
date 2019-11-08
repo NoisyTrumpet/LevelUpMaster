@@ -29,8 +29,8 @@ const Courses = () => {
         <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}>
           Be
         </span>{" "}
-        Bold<span className={courseStyles.azoSans}>,</span><span className={courseStyles.spacer} style={{ width: "2rem", height: "auto", marginRight: "8rem"}}> </span> Act
-        <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}> Now</span>
+        Bold<span className={courseStyles.azoSans}>,</span><span className={courseStyles.spacer} style={{ width: "2rem", height: "auto", marginRight: "1rem"}}> </span> <span className={courseStyles.topper}><span clasName={courseStyles.mobileAct}>Act</span>
+        <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}> Now</span></span>
         <br/>
       </h2>
 

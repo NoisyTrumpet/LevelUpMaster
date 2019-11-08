@@ -15,8 +15,11 @@
     margin-bottom: .5rem;
     text-align: center;
     position: relative;
-    left: 10%;
+    left: 9%;
+    top: 1rem;
 }
+
+
 
 
 .courseTextP {
@@ -372,7 +375,7 @@
     }
 
     .spacer {
-    	margin-right: 2rem !important;
+        margin-right: 2rem !important;
     }
 }
 
@@ -382,8 +385,22 @@
     }
 }
 
+
+.topper {
+	position: relative;
+	top: 1.6rem;
+}
+
+
 @media (max-width: 1023px) {
-	    .spacer {
+
+
+	.topper {
+		top: 0;
+
+	}
+
+    .spacer {
         display: none;
     }
 
