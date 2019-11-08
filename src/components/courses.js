@@ -29,7 +29,7 @@ const Courses = () => {
         <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}>
           Be
         </span>{" "}
-        Bold<span className={courseStyles.azoSans}>,</span><span className={courseStyles.spacer} style={{ width: "2rem", height: "auto", marginRight: "4rem"}}> </span> <span className={courseStyles.topper}>Act
+        Bold<span className={courseStyles.azoSans}>,</span><span className={courseStyles.spacer} style={{ width: "2rem", height: "auto", marginRight: "1rem"}}> </span> <span className={courseStyles.topper}>Act
         <span style={{ fontSize: "2.5rem", color: COLORS.levelUpBlue }}> Now</span> </span>
         <br/>
       </h2>

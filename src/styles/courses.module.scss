@@ -638,6 +638,17 @@
     }
 }
 
+
+@media (min-width: 1245px) and (max-width: 1590px) {
+	.topper {
+		left: 5%;
+	}
+
+	.spacer {
+		margin-right: -5rem;
+	}
+}
+
 //iPhone 6/7/8 Plus landscape
 
 @media (width: 736px) {
