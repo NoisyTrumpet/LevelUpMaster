@@ -32,5 +32,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+    	resolve: `gatsby-plugin-robots-txt`,
+    	options: {
+        	host: siteUrl,
+        	sitemap: `${baseUrl}sitemap.xml`,
+        	policy: [{ userAgent: `*`, disallow: `/` }],
+    	},
+	},
   ],
 }
