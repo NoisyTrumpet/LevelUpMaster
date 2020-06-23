@@ -4,6 +4,7 @@ module.exports = {
     description: `U.S. Air Force software development outfit in San Antonio, Texas.`,
     author: `@NoisyTrumpet`,
     siteUrl: `https://levelup.noisytrumpet.com`,
+    baseUrl: `https://levelup.noisytrumpet.com`,  
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
