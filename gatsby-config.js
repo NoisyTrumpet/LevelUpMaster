@@ -3,8 +3,9 @@ module.exports = {
     title: `Level UP Code Works`,
     description: `U.S. Air Force software development outfit in San Antonio, Texas.`,
     author: `@NoisyTrumpet`,
-    siteUrl: `https://levelup.noisytrumpet.com`,
-    baseUrl: `https://levelup.noisytrumpet.com`,  
+    siteUrl: `https://levelup.noisytrumpet.com/`,
+    baseUrl: `https://levelup.noisytrumpet.com/`,
+
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -36,8 +37,8 @@ module.exports = {
     {
     	resolve: `gatsby-plugin-robots-txt`,
     	options: {
-        	host: `${siteUrl}`,
-        	sitemap: `${baseUrl}sitemap.xml`,
+        	host: `https://levelup.noisytrumpet.com/`,
+        	sitemap: `https://levelup.noisytrumpet.com/sitemap.xml`,
         	policy: [{ userAgent: `*`, disallow: `/` }],
     	},
 	},
