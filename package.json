@@ -38,7 +38,7 @@
     "react-scroll-up-button": "^1.6.4",
     "react-tabs": "^3.0.0",
     "reactstrap": "^8.0.1",
-    "sharp": "^0.22.0",
+    "sharp": "^0.30.5",
     "smooth-scroll": "^16.1.0",
     "tween-functions": "^1.2.0"
   },
